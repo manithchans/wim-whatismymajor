@@ -1,0 +1,18 @@
+body {
+    background: url(assets/WIM-Bg.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+}
+
+#logo {
+    width: 200px;
+    margin-left: 42%;
+    margin-top: 10%;
+}
+
+#title {
+    text-align: center;
+}
