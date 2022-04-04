@@ -1,23 +1,35 @@
+@font-face {
+    font-family: PS-Reg;
+    src: url(fonts/ProductSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: PS-Light;
+    src: url(fonts/ProductSans-Light.ttf);
+}
+
+
 body {
     background: url(assets/WIM-Bg.png) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    font-family: "Product Sans";
+    font-family: "PS-Reg";
     
 }
 
 #logo {
     width: 200px;
-    margin-left: 42%;
-    margin-top: 10%;
+    margin: 10% 0 0 42%;
 }
 
 #title {
     text-align: center;
     font-weight: 100;
+    font-family: "PS-Light";
     color: white;
     font-size: 80px;
-    font-weight: light;
+    letter-spacing: 5px;
+    margin: 10px 0 0 0;
 }
