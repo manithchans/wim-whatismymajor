@@ -4,6 +4,7 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    font-family: 'Product Sans';
     
 }
 
@@ -15,4 +16,5 @@ body {
 
 #title {
     text-align: center;
+    font-weight: 100;
 }
