@@ -4,10 +4,15 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    font-family: ;
 }
 
 #logo {
     width: 200px;
-    margin-left: 40%;
+    margin-left: 42%;
     margin-top: 10%;
+}
+
+#title {
+    text-align: center;
 }
