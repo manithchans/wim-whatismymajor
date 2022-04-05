@@ -8,6 +8,17 @@
     src: url(fonts/ProductSans-Light.ttf);
 }
 
+@font-face {
+    font-family: PS-Bold;
+    src: url(fonts/ProductSans-Bold.ttf);
+}
+
+Html {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
 
 body {
     background: url(assets/WIM-Bg.png) no-repeat center center fixed;
@@ -16,12 +27,30 @@ body {
     -o-background-size: cover;
     background-size: cover;
     font-family: "PS-Reg";
-    
+
 }
 
-#logo {
-    width: 200px;
-    margin: 10% 0 0 42%;
+.centered {
+    position: relative;
+}
+
+.centered .middle {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+}
+
+.logo {
+    background: url("assets/WIM-Logo.png") no-repeat center center;
+    background-size: 40%;
+    height: 20vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
 }
 
 #title {
@@ -29,7 +58,24 @@ body {
     font-weight: 100;
     font-family: "PS-Light";
     color: white;
-    font-size: 80px;
+    font-size: 6vw;
     letter-spacing: 5px;
-    margin: 10px 0 0 0;
+    margin: 0;
+}
+
+#findMajor {
+    background-color: white;
+    padding: 10px 10px 10px 10px;
+    margin: 35px 42vw 10px 42vw;
+    border-radius: 25px;
+}
+
+#findMajor p {
+    margin: 0;
+    font-size: 1.5vw;
+    text-align: center;
+    font-family: "PS-Bold";
+    background: -webkit-linear-gradient(0deg, #3279d5, #454cc9);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
