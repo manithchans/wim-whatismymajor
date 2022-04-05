@@ -44,7 +44,7 @@ body {
 
 .logo {
     background: url("assets/WIM-Logo.png") no-repeat center center;
-    background-size: 40%;
+    background-size: 30%;
     height: 20vh;
     display: block;
     margin-left: auto;
@@ -79,7 +79,7 @@ body {
     font-weight: 100;
     font-family: "PS-Light";
     color: white;
-    font-size: 6vw;
+    font-size: 9vw;
     letter-spacing: 5px;
     margin: 0;
 }
@@ -87,7 +87,7 @@ body {
 #findMajor {
     background-color: white;
     padding: 10px 10px 10px 10px;
-    margin: 35px 42vw 10px 42vw;
+    margin: 45px 42vw 20px 42vw;
     border-radius: 25px;
 }
 
