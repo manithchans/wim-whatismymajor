@@ -75,7 +75,7 @@ body {
     font-size: 1.5vw;
     text-align: center;
     font-family: "PS-Bold";
-    background: -webkit-linear-gradient(0deg, #3279d5, #454cc9);
+    background: -webkit-linear-gradient(0deg, #0099ff, #0000ff);
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
