@@ -65,23 +65,51 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    margin-top: 5vh;
-    padding: 0 40vh 0 40vh;
+    margin-top: 2vh;
+    padding: 0 35vh 3vh 35vh;
 }
 
 .group2 i {
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 20%;
     color: white;
     font-size: 1.5vw;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    /* Safari & Chrome */
+    transition-duration: 0.4s;
 }
 
-#title {
+.group2 i:hover {
+    color: #0049ff;
+    background-color: white;
+}
+
+.group2 i:hover .hoverText{
+    visibility: visible;
+}
+
+.title {
     text-align: center;
     font-weight: 100;
     font-family: "PS-Light";
     color: white;
-    font-size: 9vw;
+    font-size: 7vw;
     letter-spacing: 5px;
     margin: 0;
+    padding: 0 3vh;
+}
+
+#blueText{
+    color: #37ffff;
+}
+
+#groupTitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 3vw;
 }
 
 #findMajor {
@@ -93,8 +121,9 @@ body {
     font-size: 1.5vw;
     text-align: center;
     font-family: "PS-Bold";
-    -webkit-transition-duration: 0.4s; /* Safari & Chrome */
+    -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
+    cursor: pointer;
 }
 
 #findMajor:hover {
@@ -103,22 +132,6 @@ body {
     font-size: 1.8vw;
     margin: 50px 40vw 30px 40vw;
 }
-
-/* #findMajor p:hover {
-    background: white;
-    background-clip: text;
-}
-
-
-#findMajor p {
-    margin: 0;
-    font-size: 1.5vw;
-    text-align: center;
-    font-family: "PS-Bold";
-    background: -webkit-linear-gradient(0deg, #0099ff, #0000ff);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-} */
 
 #line {
     background-color: white;
@@ -133,4 +146,29 @@ body {
     text-align: center;
     font-family: "PS-Light";
     color: white;
+}
+
+
+.tooltip {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.tooltipText {
+    position: absolute;
+    top: 150%;
+    font-size: 1vw;
+    opacity: 0;
+    transition: all .5s;
+    color: white;
+    text-align: center;
+    width: 200px;
+}
+
+.tooltip:hover .tooltipText{
+    opacity: 1;
+    transform: translateY(-10px);
 }
