@@ -61,6 +61,7 @@ Html {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 5vh;
     width: 50%;
 
 }
@@ -69,8 +70,8 @@ Html {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    margin-top: 20vh;
-    padding: 0 40vh 0 40vh;
+    margin-top: 15vh;
+    padding: 0 30vh 0 30vh;
 }
 
 .group2 {
@@ -78,7 +79,7 @@ Html {
     align-items: center;
     justify-content: space-evenly;
     margin-top: 2vh;
-    padding: 0 35vh 3vh 35vh;
+    padding: 0 35vh 8vh 35vh;
 }
 
 .group2 i {
@@ -149,7 +150,7 @@ Html {
 
 #line {
     background-color: white;
-    width: 20vw;
+    width: 25vw;
     height: 1px;
 }
 
