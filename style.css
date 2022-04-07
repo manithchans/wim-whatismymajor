@@ -19,27 +19,30 @@ Html {
     padding: 0px;
     font-family: "PS-Reg";
     background: url(assets/WIM-Bg2.png) no-repeat center center;
-	background-size: 200% 200%;
-	animation: gradient 20s ease infinite;
+    background-size: 200% 200%;
+    animation: gradient 15s ease infinite;
 }
 
 @keyframes gradient {
-	0% {
-		background-size: 500% 500%;
-	}
-    25%{
-        background-size: 250% 500%;
+    0% {
+        background-size: 900% 900%;
     }
-	50% {
-		background-size: 120% 120%;
-	}
-    75%{
-        background-size: 250% 500%;
-    }
-	100% {
-		background-size: 500% 500%;
-	}
 
+    45% {
+        background-size: 800% 800%;
+    }
+
+    70% {
+        background-size: 250% 250%;
+    }
+
+    90% {
+        background-size: 100% 100%;
+    }
+
+    100% {
+        background-size: 900% 900%;
+    }
 }
 
 .centered {
@@ -61,46 +64,8 @@ Html {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 5vh;
     width: 50%;
 
-}
-
-.group {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-top: 15vh;
-    padding: 0 30vh 0 30vh;
-}
-
-.group2 {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-top: 2vh;
-    padding: 0 35vh 8vh 35vh;
-}
-
-.group2 i {
-    background-color: transparent;
-    padding: 10px;
-    border-radius: 20%;
-    color: white;
-    font-size: 1.5vw;
-    cursor: pointer;
-    -webkit-transition-duration: 0.4s;
-    /* Safari & Chrome */
-    transition-duration: 0.4s;
-}
-
-.group2 i:hover {
-    color: #0049ff;
-    background-color: white;
-}
-
-.group2 i:hover .hoverText {
-    visibility: visible;
 }
 
 .title {
@@ -118,12 +83,43 @@ Html {
     color: #37ffff;
 }
 
-.groupTitle {
+#groupTitle {
     display: flex;
+    opacity: 1;
+    height: 20vh;
     align-items: center;
     justify-content: center;
-    padding: 0 3vw;
+    /* padding: 0 3vw; */
 }
+
+.fadeTitle {
+    display: none;
+    animation: fadein 3s ease;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+        height: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    80% {
+        height: 20vh;
+        opacity: 0;
+    }
+
+    100% {
+        display: flex;
+        opacity: 1;
+
+    }
+
+}
+
 
 #findMajor {
     color: #37ffff;
@@ -136,9 +132,44 @@ Html {
     font-size: 1.5vw;
     text-align: center;
     font-family: "PS-Bold";
-    -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
     cursor: pointer;
+    transform: translateY(0);
+
+}
+
+.fade {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    animation: fade 4s ease;
+}
+
+@keyframes fade {
+    0% {
+        font-size: 0;
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    50% {
+        font-size: 1.5vw;
+        padding: 10px 10px 10px 10px;
+        margin: 45px 42vw 20px 42vw;
+        opacity: 0;
+    }
+
+    70% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    100% {
+
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 #findMajor:hover {
@@ -161,6 +192,105 @@ Html {
     text-align: center;
     font-family: "PS-Light";
     color: white;
+}
+
+#group {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 15vh;
+    padding: 0 30vh 0 30vh;
+}
+
+.fadeGroup {
+    animation: fadeGroup 4s ease;
+}
+
+@keyframes fadeGroup {
+    0% {
+        font-size: 0;
+        padding: 0 0 0 0;
+        margin-top: 0;
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    15% {
+        margin-top: 15vh;
+        font-size: 1vw;
+        padding: 0 30vh 0 30vh;
+        opacity: 0;
+    }
+
+    90% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#group2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 2vh;
+    padding: 0 35vh 8vh 35vh;
+}
+
+.fadeGroup2 {
+    animation: fadeGroup 5s ease;
+}
+
+@keyframes fadeGroup2 {
+    0% {
+        font-size: 0;
+        padding: 0 0 0 0;
+        margin-top: 0;
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    12% {
+        margin-top: 15vh;
+        margin-top: 2vh;
+    padding: 0 35vh 8vh 35vh;
+        opacity: 0;
+    }
+
+    90% {
+        transform: translateY(300px);
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#group2 i {
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 20%;
+    color: white;
+    font-size: 1.5vw;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    /* Safari & Chrome */
+    transition-duration: 0.4s;
+}
+
+#group2 i:hover {
+    color: #0049ff;
+    background-color: white;
+}
+
+#group2 i:hover .hoverText {
+    visibility: visible;
 }
 
 
@@ -194,6 +324,7 @@ header i {
     margin-left: 98%;
     margin-top: 0.5%;
     cursor: pointer;
+    animation: opacity 12s ease;
 }
 
 footer {
@@ -207,5 +338,17 @@ footer {
     text-align: center;
     font-family: "PS-Bold";
     color: white;
+    animation: opacity 12s ease;
 
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+
+    50%{opacity: 0;}
+    100%{
+        opacity: 1;
+    }
 }
