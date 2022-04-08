@@ -15,7 +15,6 @@ typewriter = () => {
     } else {
         setTimeout(typewriter, speedBack);
         textPosition--;
-        console.log(textPosition);
         if (textPosition == 0) {
             setTimeout(backward = false, speedForward);
             if (index == 6) index = 0;
@@ -37,30 +36,120 @@ window.onload = function () {
         group2.style.display = "none";
         findMajor.style.display = "none";
     }
-    
+
     function fade() {
         //title What is
         groupTitle.style = "display: flex";
         groupTitle.classList.add("fadeTitle");
         setTimeout(typewriter, 5000);
-    
+
         //findMajor
         findMajor.style.display = "block";
         findMajor.classList.add("fade");
-    
+
         //group
         group.style.display = "flex";
         group.classList.add("fadeGroup");
-    
+
         //group2
         group2.style.display = "flex";
         group2.classList.add("fadeGroup2");
-    
+
     }
 
+    function infoProj() {
+
+        document.querySelector(".container").addEventListener("click", function () {
+            document.querySelector("#centered").classList.toggle("fadeOut");
+            document.querySelector("#bigSize").classList.toggle("hidden");
+            document.querySelector("#overlay").classList.toggle("fadeIn");
+
+            setTimeout(function () {
+                document.querySelector("#bg").classList.toggle("textFadeIn");
+            }, 1000);
+
+            setTimeout(function () {
+                document.querySelector("#content").classList.toggle("fadeUp");
+            }, 1700);
+
+        })
+
+        closeInfoProj();
+    }
+
+    function closeInfoProj() {
+        document.querySelector("#bigSize").addEventListener("click", function () {
+            document.querySelector("#content").classList.toggle("fadeUp");
+
+            setTimeout(function () {
+                document.querySelector("#bg").classList.toggle("textFadeIn");
+
+            }, 1000);
+
+            setTimeout(function () {
+
+                document.querySelector("#overlay").classList.toggle("fadeIn");
+
+                document.querySelector("#centered").classList.toggle("fadeOut");
+
+                document.querySelector("#bigSize").classList.toggle("hidden");
+
+            }, 2000);
+
+        })
+    }
+
+    function question(){
+
+        //open
+        document.querySelector(".fa-question-circle").addEventListener("click", function () {
+            document.querySelector("#centered").classList.toggle("fadeOut");
+            document.querySelector("#questionOverlay #bigSize").classList.toggle("hidden");
+            document.querySelector("#questionOverlay").classList.toggle("fadeIn");
+            
+
+            setTimeout(function () {
+                document.querySelector("#questionOverlay #bg").classList.toggle("textFadeIn");
+            }, 1000);
+
+            setTimeout(function () {
+                document.querySelector("#questionOverlay #content").classList.toggle("fadeUp");
+            }, 1700);
+
+        })
+
+
+        //close
+        document.querySelector("#questionOverlay #bigSize").addEventListener("click", function () {
+            document.querySelector("#questionOverlay #content").classList.toggle("fadeUp");
+
+            setTimeout(function () {
+                document.querySelector("#questionOverlay #bg").classList.toggle("textFadeIn");
+
+            }, 1000);
+
+            setTimeout(function () {
+
+                document.querySelector("#questionOverlay").classList.toggle("fadeIn");
+
+                document.querySelector("#centered").classList.toggle("fadeOut");
+
+                document.querySelector(" #questionOverlay #bigSize").classList.toggle("hidden");
+
+            }, 2000);
+
+        })
+
+    }
+
+
+
+    // initialize function
     hide();
     setTimeout(fade, 1500);
+    infoProj();
+    question();
+
 
 }
-
 

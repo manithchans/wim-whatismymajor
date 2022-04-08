@@ -21,6 +21,7 @@ Html {
     background: url(assets/WIM-Bg2.png) no-repeat center center;
     background-size: 200% 200%;
     animation: gradient 12s ease infinite;
+    color: white;
 }
 
 @keyframes gradient {
@@ -49,11 +50,20 @@ Html {
     }
 }
 
-.centered {
+#centered {
     position: relative;
+    opacity: 1;
+    display: block;
+    transition: opacity 0.5s ease;
 }
 
-.centered .middle {
+#centered.fadeOut {
+    opacity: 0;
+}
+
+
+
+#centered .middle {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -261,7 +271,7 @@ Html {
     12% {
         margin-top: 15vh;
         margin-top: 2vh;
-    padding: 0 35vh 8vh 35vh;
+        padding: 0 35vh 8vh 35vh;
         opacity: 0;
     }
 
@@ -322,7 +332,7 @@ Html {
     transform: translateY(-10px);
 }
 
-header i {
+.header {
     font-size: 2vw;
     color: white;
     margin-left: 98%;
@@ -331,19 +341,29 @@ header i {
     animation: opacity 12s ease;
 }
 
-footer {
-    position: absolute;
+.footer {
+    position: fixed;
+    left: 42%;
     bottom: 0;
-    width: 99%;
-    padding-bottom: 2vh;
-    cursor: pointer;
-    font-size: 0.7vw;
-    letter-spacing: 0.1vw;
+    right: auto;
+    width: 15vw;
+    color: white;
     text-align: center;
     font-family: "PS-Bold";
-    color: white;
-    animation: opacity 12s ease;
+    font-size: 0.7vw;
+    letter-spacing: 0.1vw;
+    padding-bottom: 2vh;
+}
 
+#bigSize {
+    display: none;
+    font-size: 2vw;
+    font-family: "PS-Reg";
+}
+
+.container {
+    cursor: pointer;
+    animation: opacity 12s ease;
 }
 
 @keyframes opacity {
@@ -351,8 +371,174 @@ footer {
         opacity: 0;
     }
 
-    50%{opacity: 0;}
-    100%{
+    50% {
+        opacity: 0;
+    }
+
+    100% {
         opacity: 1;
     }
+}
+
+#overlay {
+    position: fixed;
+    display: block;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    opacity: 0;
+    cursor: pointer;
+    transition: all 0.7s ease;
+
+}
+
+#overlay.fadeIn {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+
+#overlay p {
+    padding: 1% 0 0 5%;
+    font-family: "PS-Bold";
+}
+
+#bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0%;
+    height: 80%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transition: all 1s ease;
+    padding: 0%;
+    overflow: auto;
+
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 0px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20vw);
+    -webkit-backdrop-filter: blur(20vw);
+}
+
+#bg.textFadeIn {
+    font-size: 5vh;
+    border: 1px solid rgba(255, 255, 255, 0.68);
+    border-radius: 16px;
+    width: 90%;
+    height: 80%;
+}
+
+#content {
+
+    opacity: 0;
+    font-size: 5vh;
+    color: white;
+    padding: 2% 3% 1% 2%;
+    margin: 0;
+    top: 0px;
+    position: relative;
+    transition: opacity 1s cubic-bezier(1, 0, 0, 1);
+
+}
+
+#content.fadeUp {
+    opacity: 1;
+}
+
+#content h3 {
+    margin: 0;
+    padding-left: 1vh;
+}
+
+#content p {
+    text-align: justify;
+    text-justify: inter-word;
+    margin: 0;
+    font-size: 2.5vh;
+    font-family: "PS-Reg";
+    padding: 1%
+}
+
+#bigSize.hidden {
+    display: block;
+}
+
+#content:hover {
+    animation: slide 35.0s ease;
+}
+
+@keyframes slide {
+    0% {
+        top: 2px;
+    }
+
+    100% {
+        top: -200vh;
+    }
+}
+
+#profile {
+    display: flex;
+    width: 100%;
+    align-content: space-between;
+    align-items: flex-start;
+}
+
+#profile img {
+    width: 250%;
+    padding-left: 2vw;
+
+}
+
+#infoLogo {
+    text-align: center;
+}
+
+#infoLogo p{
+    text-align: center;
+    font-family: "PS-Light";
+    font-size: 1vw;
+}
+#infoLogo h3{
+    text-align: center;
+    font-family: "PS-Bold";
+    font-size: 1.2vw;
+}
+
+#infoLogo img {
+    width: 25vw;
+    padding-bottom: 1vh;
+}
+
+#questionOverlay {
+    position: fixed;
+    display: block;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    opacity: 0;
+    cursor: pointer;
+    transition: all 0.7s ease;
+
+}
+
+#questionOverlay.fadeIn {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+
+#questionOverlay h4 {
+    padding: 1% 0 0 5%;
+    font-family: "PS-Bold";
 }
