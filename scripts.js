@@ -99,7 +99,7 @@ window.onload = function () {
         })
     }
 
-    function question(){
+    function howToPage(){
 
         //open
         document.querySelector(".fa-question-circle").addEventListener("click", function () {
@@ -142,13 +142,46 @@ window.onload = function () {
 
     }
 
+    function questionPage(){
+        document.querySelector("#findMajor").addEventListener("click", function () {
+            document.querySelector("#centered").classList.toggle("fadeOut");
+            
+            document.querySelector("#querry").classList.toggle("fadeIn");
+            
+
+            setTimeout(function () {
+                document.querySelector("#querry #bg").classList.toggle("textFadeIn");
+            }, 1000);
+
+            setTimeout(function () {
+                document.querySelector("#answerContent").classList.toggle("fadeUp");
+            }, 1700);
+
+        })
+    }
+
+    const answerEls = document.querySelectorAll('.answer')
+    function getSelected() {
+        let answer
+    
+        answerEls.forEach(answerEl => {
+            if(answerEl.checked) {
+                answer = answerEl.id
+            }
+        })
+    
+        console.log(answer);
+    };
+
 
 
     // initialize function
     hide();
     setTimeout(fade, 1500);
     infoProj();
-    question();
+    howToPage();
+    questionPage();
+    getSelected();
 
 
 }

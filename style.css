@@ -52,66 +52,6 @@ Html {
     }
 }
 
-.switch {
-    position: relative;
-    display: inline-block;
-    width: 6vh;
-    height: 3vh;
-}
-
-.switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-
-.slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    -webkit-transition: .4s;
-    transition: .4s;
-}
-
-.slider:before {
-    position: absolute;
-    content: "";
-    height: 2vh;
-    width: 2vh;
-    left: 1vh;
-    bottom: 4px;
-    background-color: white;
-    -webkit-transition: .4s;
-    transition: .4s;
-}
-
-input:checked+.slider {
-    background-color: #2196F3;
-}
-
-input:focus+.slider {
-    box-shadow: 0 0 1px #2196F3;
-}
-
-input:checked+.slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(2vh);
-}
-
-/* Rounded sliders */
-.slider.round {
-    border-radius: 34px;
-}
-
-.slider.round:before {
-    border-radius: 50%;
-}
-
 #lang {
     font-size: 2vh;
     display: flex;
@@ -219,7 +159,7 @@ i {
     font-size: 1.5vw;
     text-align: center;
     font-family: "PS-Bold";
-    transition-duration: 0.4s;
+    transition-duration: 0.5s;
     cursor: pointer;
     transform: translateY(0);
 
@@ -525,24 +465,23 @@ i {
     transition: all 1s ease;
     padding: 0%;
     overflow: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #ffffff #e4e4e400;
+    border-radius: 2vw;
+
 
     background: rgba(255, 255, 255, 0.25);
-    border-radius: 0px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(20vw);
-    -webkit-backdrop-filter: blur(20vw);
 }
 
 #bg.textFadeIn {
-    font-size: 5vh;
     border: 1px solid rgba(255, 255, 255, 0.68);
-    border-radius: 16px;
+    font-size: 5vh;
     width: 90%;
     height: 80%;
 }
 
 #content {
-
     opacity: 0;
     font-size: 5vh;
     color: white;
@@ -579,6 +518,8 @@ i {
 #content:hover {
     animation: slide 35.0s ease;
 }
+
+
 
 @keyframes slide {
     0% {
@@ -649,4 +590,136 @@ i {
 #questionOverlay h4 {
     padding: 1% 0 0 5%;
     font-family: "PS-Bold";
+}
+
+#querry {
+    position: fixed;
+    display: block;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    opacity: 0;
+    transition: all 0.7s ease;
+
+}
+
+#querry.fadeIn {
+    width: 100%;
+    height: 90%;
+    opacity: 1;
+}
+
+#querry img {
+    width: 4.5vh;
+}
+
+#querry h4 {
+    margin: 2.5vh 13vh 1vh 13vh;
+    font-family: "PS-Light";
+    font-size: 3vh;
+    pointer-events: none;
+}
+
+
+#questionCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 60vh;
+}
+
+#answer {
+    width: 50%;
+    height: 30%;
+    border-radius: 2vw;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    padding: 3vh;
+    border: 0.2vh solid;
+    flex: 2 0 30%;
+    margin: 1vh;
+    transition: 1s;
+}
+
+#over {
+    position: absolute;
+}
+
+#answerGroup {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* #answerGroup input {
+    opacity: 0;
+} */
+
+input {
+    display: none;
+}
+
+input:checked+#answer {
+    background: -webkit-linear-gradient(0deg, #0099ff, #0000ff);
+}
+
+#answer:hover {
+    background: -webkit-linear-gradient(0deg, #0099ff, #0000ff);
+    cursor: pointer;
+}
+
+#answerContent {
+    opacity: 0;
+    font-size: 5vh;
+    color: white;
+    padding: 2% 3% 1% 2%;
+    margin: 0;
+    top: 0px;
+    position: relative;
+    transition: opacity 1s cubic-bezier(1, 0, 0, 1);
+
+}
+
+#answerContent.fadeUp {
+    opacity: 1;
+}
+
+#answerContent h3 {
+    margin: 0;
+    padding-left: 1vh;
+}
+
+#answerContent p {
+    text-align: justify;
+    text-justify: inter-word;
+    margin: 0;
+    font-size: 2.5vh;
+    font-family: "PS-Reg";
+    padding: 1%;
+}
+
+.next {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    bottom: 0;
+    width: 100%;
+    height: 15%;
+}
+
+#submit {
+    width: 10vh;
+    height: 10vh;
+    border-radius: 42vw;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 0.2vh solid;
+    transition: 1s;
+    margin-right: 8vh;
+    text-align: center;
+    font-size: 8vh;
+    padding: 0.5vh 0 0 1vh;
 }
