@@ -20,11 +20,13 @@ Html {
     font-family: "PS-Reg";
     background: url(assets/WIM-Bg2.png) no-repeat center center;
     background-size: 200% 200%;
-    animation: gradient 12s ease infinite;
+    animation: zoom 12s ease infinite;
     color: white;
 }
 
-@keyframes gradient {
+
+
+@keyframes zoom {
     0% {
         background-size: 900% 900%;
     }
@@ -50,6 +52,74 @@ Html {
     }
 }
 
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 6vh;
+    height: 3vh;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 2vh;
+    width: 2vh;
+    left: 1vh;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #2196F3;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(2vh);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+#lang {
+    font-size: 2vh;
+    display: flex;
+    align-items: center;
+    width: 15vh;
+    justify-content: space-around;
+}
+
 #centered {
     position: relative;
     opacity: 1;
@@ -61,6 +131,9 @@ Html {
     opacity: 0;
 }
 
+i {
+    cursor: pointer;
+}
 
 
 #centered .middle {
@@ -136,7 +209,7 @@ Html {
 
 
 #findMajor {
-    color: #37ffff;
+    color: #ffffff;
     border-color: white;
     border-style: solid;
     border-width: 1px;
@@ -149,6 +222,11 @@ Html {
     transition-duration: 0.4s;
     cursor: pointer;
     transform: translateY(0);
+
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20vw);
+    -webkit-backdrop-filter: blur(20vw);
 
 }
 
@@ -290,6 +368,7 @@ Html {
     background-color: transparent;
     padding: 10px;
     border-radius: 20%;
+    border: solid 0px;
     color: white;
     font-size: 1.5vw;
     cursor: pointer;
@@ -299,8 +378,11 @@ Html {
 }
 
 #group2 i:hover {
-    color: #0049ff;
-    background-color: white;
+    border: solid 0.1px;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20vw);
+    -webkit-backdrop-filter: blur(20vw);
 }
 
 #group2 i:hover .hoverText {
@@ -333,9 +415,12 @@ Html {
 }
 
 .header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     font-size: 2vw;
     color: white;
-    margin-left: 98%;
     margin-top: 0.5%;
     cursor: pointer;
     animation: opacity 12s ease;
@@ -353,12 +438,34 @@ Html {
     font-size: 0.7vw;
     letter-spacing: 0.1vw;
     padding-bottom: 2vh;
+    transition: all 0.5s ease;
+
+}
+
+.footer:hover {
+    color: #37ffff;
+}
+
+.fa-question-circle {
+    transition: all 0.5s ease;
+}
+
+.fa-question-circle:hover {
+    color: #37ffff;
+    font-size: 4vh;
 }
 
 #bigSize {
+    cursor: pointer;
     display: none;
     font-size: 2vw;
     font-family: "PS-Reg";
+    transition: all 0.5s ease;
+}
+
+#bigSize:hover {
+    cursor: pointer;
+    color: red;
 }
 
 .container {
@@ -500,12 +607,13 @@ Html {
     text-align: center;
 }
 
-#infoLogo p{
+#infoLogo p {
     text-align: center;
     font-family: "PS-Light";
     font-size: 1vw;
 }
-#infoLogo h3{
+
+#infoLogo h3 {
     text-align: center;
     font-family: "PS-Bold";
     font-size: 1.2vw;
