@@ -4,7 +4,7 @@
 <head>
     <title>WIM | What Is my Major?</title>
     <link rel="stylesheet" href="style.css">
-    <script src="scripts.js"></script>
+
     <link rel="icon" href="assets/WIM-BlueLogo.png">
 
 
@@ -205,36 +205,47 @@
     <!-- Questions Page -->
     <div id="querry">
         <div class="header">
-            <h4>Question 1 /15</h4>
+            <h4 id="qNum">Question 1 /15</h4>
             <h4> <img src="assets/WIM-Logo.png" alt=""> | What is My Major?</h4>
         </div>
 
-        <div id="bg">
+        <div id="bg" style="overflow: hidden;">
             <div id="answerContent">
                 <div id="questionCard">
                     <div>
-                        <h3>What is your favourite food?</h3>
-                        <p> Subtitle </p>
+                        <h3 id="question">What is your favourite food?</h3>
+                        <p id="subtitle"> Subtitle </p>
                     </div>
 
                     <div id="answerGroup">
-                        <input type="radio" name="answer" id="a" class="answer">
-                        <label for="a" id="answer">Question</label>
 
-                        <input type="radio" name="answer" id="b" class="answer">
-                        <label for="b" id="answer">Question</label>
+                            <input type="radio" name="answer" id="a" class="answer">
+                            <label for="a" id="a_text">Question</label>
 
-                        <input type="radio" name="answer" id="c" class="answer">
-                        <label for="c" id="answer">Question</label>
 
-                        <input type="radio" name="answer" id="d" class="answer">
-                        <label for="d" id="answer">Question</label>
+
+                            <input type="radio" name="answer" id="b" class="answer">
+                            <label for="b" id="b_text">Question</label>
+
+
+
+
+                            <input type="radio" name="answer" id="c" class="answer">
+                            <label for="c" id="c_text">Question</label>
+
+
+
+                            <input type="radio" name="answer" id="d" class="answer">
+                            <label for="d" id="d_text">Question</label>
+
+
+
+
                     </div>
                 </div>
             </div>
         </div>
-        <div class="next">
-            <h4></h4>
+        <div id="next">
             <div id="submit">
                 <i class="fas fa-chevron-right"></i>
             </div>
@@ -243,5 +254,8 @@
 
 
 </body>
+
+<script src="scripts.js"></script>
+<script src="questionCotroller.js"></script>
 
 </html>

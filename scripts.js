@@ -99,14 +99,14 @@ window.onload = function () {
         })
     }
 
-    function howToPage(){
+    function howToPage() {
 
         //open
         document.querySelector(".fa-question-circle").addEventListener("click", function () {
             document.querySelector("#centered").classList.toggle("fadeOut");
             document.querySelector("#questionOverlay #bigSize").classList.toggle("hidden");
             document.querySelector("#questionOverlay").classList.toggle("fadeIn");
-            
+
 
             setTimeout(function () {
                 document.querySelector("#questionOverlay #bg").classList.toggle("textFadeIn");
@@ -142,12 +142,12 @@ window.onload = function () {
 
     }
 
-    function questionPage(){
+    function questionPage() {
         document.querySelector("#findMajor").addEventListener("click", function () {
             document.querySelector("#centered").classList.toggle("fadeOut");
-            
+
             document.querySelector("#querry").classList.toggle("fadeIn");
-            
+
 
             setTimeout(function () {
                 document.querySelector("#querry #bg").classList.toggle("textFadeIn");
@@ -155,23 +155,14 @@ window.onload = function () {
 
             setTimeout(function () {
                 document.querySelector("#answerContent").classList.toggle("fadeUp");
+
+                document.querySelector("#next").classList.toggle("fadeIn");
             }, 1700);
+
+            currentQuiz = 0;
 
         })
     }
-
-    const answerEls = document.querySelectorAll('.answer')
-    function getSelected() {
-        let answer
-    
-        answerEls.forEach(answerEl => {
-            if(answerEl.checked) {
-                answer = answerEl.id
-            }
-        })
-    
-        console.log(answer);
-    };
 
 
 
@@ -181,7 +172,6 @@ window.onload = function () {
     infoProj();
     howToPage();
     questionPage();
-    getSelected();
 
 
 }
