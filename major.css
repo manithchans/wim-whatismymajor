@@ -1,0 +1,130 @@
+.padding {
+    padding: 5vh;
+}
+
+#majorPage {
+    display: flex;
+    justify-content: space-between;
+    width: 0%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.7s ease;
+
+
+}
+
+#majorPage.fadeIn {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+
+#majorPage h4 {
+    font-family: "PS-Bold";
+    font-size: 6vh;
+    margin: 0;
+}
+
+#majorPage h3 {
+    font-family: "PS-Light";
+    font-size: 4vh;
+    margin: 0;
+    cursor: pointer;
+}
+
+#majorPage h2 {
+    font-family: "PS-Bold";
+    font-size: 2.5vh;
+    margin: 0;
+}
+
+#majorPage p {
+    font-family: "PS-Light";
+    font-size: 2vh;
+    margin: 0;
+    text-align: justify;
+}
+
+#majorBg {
+    display: block;
+    width: 60%;
+    transition: all 1s ease;
+    padding: 2%;
+    height: 78vh;
+    overflow:scroll;
+    scrollbar-width: thin;
+    scrollbar-color: #ffffff #e4e4e400;
+    border-radius: 2vw;
+
+    border: 1px solid rgba(255, 255, 255, 0.68);
+
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+#majorBg.textFadeIn {
+    border: 1px solid rgba(255, 255, 255, 0.68);
+    font-size: 5vh;
+    width: 90%;
+    height: 80%;
+}
+
+#majorName {
+    width: 30vw;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+#auppLogo {
+    width: 40vh;
+    padding-left: 3vh;
+
+}
+
+ul {
+    columns: 2;
+    padding-left: 2vh;
+    font-size: 2vh;
+    margin-top: 1vh;
+    margin-bottom: 0;
+}
+
+#auppInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+a {
+    color: white;
+}
+
+#findAgain {
+    width: 50%;
+    color: #ffffff;
+    border-color: white;
+    border-style: solid;
+    border-width: 1px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 45px;
+    font-size: 1.5vw;
+    text-align: center;
+    font-family: "PS-Bold";
+    transition-duration: 0.5s;
+    cursor: pointer;
+
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20vw);
+    -webkit-backdrop-filter: blur(20vw);
+    margin-left: 20%;
+
+}
+
+#findAgain:hover {
+    background: -webkit-linear-gradient(0deg, #0099ff, #0000ff);
+    color: white;
+}

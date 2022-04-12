@@ -142,27 +142,7 @@ window.onload = function () {
 
     }
 
-    function questionPage() {
-        document.querySelector("#findMajor").addEventListener("click", function () {
-            document.querySelector("#centered").classList.toggle("fadeOut");
-
-            document.querySelector("#querry").classList.toggle("fadeIn");
-
-
-            setTimeout(function () {
-                document.querySelector("#querry #bg").classList.toggle("textFadeIn");
-            }, 1000);
-
-            setTimeout(function () {
-                document.querySelector("#answerContent").classList.toggle("fadeUp");
-
-                document.querySelector("#next").classList.toggle("fadeIn");
-            }, 1700);
-
-            currentQuiz = 0;
-
-        })
-    }
+    
 
 
 
@@ -171,7 +151,10 @@ window.onload = function () {
     setTimeout(fade, 1500);
     infoProj();
     howToPage();
-    questionPage();
+
+    document.getElementById('findAgain').addEventListener('click',()=>{
+        window.location.reload();
+    });
 
 
 }
