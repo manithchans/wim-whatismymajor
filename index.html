@@ -4,6 +4,7 @@
 <head>
     <title>WIM | What Is my Major?</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="major.css">
 
     <link rel="icon" href="assets/WIM-BlueLogo.png">
 
@@ -16,6 +17,7 @@
 </head>
 
 <body>
+   
     <!-- Home Page Section -->
     <div id="centered">
         <!-- question -->
@@ -52,32 +54,32 @@
             </div>
 
             <div id="group2">
-                <div class="tooltip">
+                <div class="tooltip BUS">
                     <i class="fas fa-briefcase"></i>
                     <span class="tooltipText">Business</span>
                 </div>
 
-                <div class="tooltip">
+                <div class="tooltip LAW">
                     <i class="fas fa-gavel"></i>
                     <span class="tooltipText">Law</span>
                 </div>
 
-                <div class="tooltip">
+                <div class="tooltip GLA">
                     <i class="fas fa-globe"></i>
                     <span class="tooltipText">Global Affairs</span>
                 </div>
 
-                <div class="tooltip">
+                <div class="tooltip IT">
                     <i class="fas fa-laptop"></i>
                     <span class="tooltipText">Information Technology Management</span>
                 </div>
 
-                <div class="tooltip">
+                <div class="tooltip THM">
                     <i class="fas fa-h-square"></i>
                     <span class="tooltipText">Tourism and Hospitality Management</span>
                 </div>
 
-                <div class="tooltip">
+                <div class="tooltip ICT">
                     <i class="fas fa-laptop-code"></i>
                     <span class="tooltipText">Information Communications Technology</span>
                 </div>
@@ -204,7 +206,7 @@
 
     <!-- Questions Page -->
     <div id="querry">
-        <div class="header">
+        <div class="header" style="pointer-events: none;">
             <h4 id="qNum">Question 1 /15</h4>
             <h4> <img src="assets/WIM-Logo.png" alt=""> | What is My Major?</h4>
         </div>
@@ -219,43 +221,72 @@
 
                     <div id="answerGroup">
 
-                            <input type="radio" name="answer" id="a" class="answer">
-                            <label for="a" id="a_text">Question</label>
-
-
-
-                            <input type="radio" name="answer" id="b" class="answer">
-                            <label for="b" id="b_text">Question</label>
-
-
-
-
-                            <input type="radio" name="answer" id="c" class="answer">
-                            <label for="c" id="c_text">Question</label>
-
-
-
-                            <input type="radio" name="answer" id="d" class="answer">
-                            <label for="d" id="d_text">Question</label>
-
-
-
-
                     </div>
                 </div>
             </div>
         </div>
         <div id="next">
+            <p><b><i>*Note:  </i></b>Once you answered, you<br>  can't return back to the question.</p>
             <div id="submit">
-                <i class="fas fa-chevron-right"></i>
+                <i class="fas fa-chevron-right" style="pointer-events:none;"></i>
             </div>
         </div>
     </div>
+
+
+     <!-- Major Page -->
+     <div id="padding">
+        <div id="majorPage">
+            <div id="majorName">
+                <h3 id="home"> <img src="assets/WIM-Logo.png" alt="" style="width: 7vh;"> |
+                    What is My Major?</h3>
+                <div>
+                    <p id="labelText"></p>
+                    <h4 id="major"></h4>
+                </div>
+
+                <div id="findAgain"><i class="fas fa-home"></i> Home </div>
+
+            </div>
+
+
+            <div id="majorBg" style="opacity:1">
+                <h2 id="majorTitle">What is ITM?</h2>
+                <p id="majorInfo"></p>
+
+                <br>
+
+                <h2>Career Opportunities</h2>
+                <p id="careerInfo"> </p>
+                <ul id="careerList"> </ul>
+
+                <br>
+                <h2>Course List:</h2>
+                <ul id="courseList"> </ul>
+
+                <br>
+                <div id="auppInfo">
+                    <p style="margin: 0;">Above information is retrieved from American University of Phnom Penh's
+                        Bachelor's Program info. For more information, please visit <a href="https://www.aupp.edu.kh"
+                            target="_blank">www.aupp.edu.kh</a>
+                    </p>
+
+                    <a href="https://www.aupp.edu.kh" target="_blank">
+                        <img src="assets/aupp-logo.png" alt="" id="auppLogo">
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
 
 </body>
 
 <script src="scripts.js"></script>
 <script src="questionCotroller.js"></script>
+<script src="major.js"></script>
 
 </html>

@@ -2,35 +2,41 @@
 const quizData = [
     {
         question: "Which language runs in a web browser?",
-        subtitle: "None",
-        a: "JavaHypertext Markup LanguageHypertext Markup LanguageHypertext Markup LanguageHypertext Markup Language",
-        b: "C",
-        c: "Python",
-        d: "JavaScript",
+        subtitle: "",
+        answer: [
+            "Java",
+            "C",
+            "Python",
+            "JavaScript",
+            "JavaScript",
+            "JavaScript",],
     },
     {
         question: "What does CSS stand for?",
-        subtitle: "None",
-        a: "Central Style Sheets",
-        b: "Cascading Style Sheets",
-        c: "Cascading Simple Sheets",
-        d: "Cars SUVs Sailboats",
+        subtitle: "",
+        answer: [
+        "Central Style Sheets",
+        "Cascading Style Sheets",
+        "Cascading Simple Sheets",
+        "Cars SUVs Sailboats",],
     },
     {
         question: "What does HTML stand for?",
-        subtitle: "None",
-        a: "Hypertext Markup Language",
-        b: "Hypertext Markdown Language",
-        c: "Hyperloop Machine Language",
-        d: "Helicopters Terminals Motorboats Lamborginis",
+        subtitle: "",
+        answer: [
+        "Hypertext Markup Language",
+        "Hypertext Markdown Language",
+        "Hyperloop Machine Language",
+        "Helicopters Terminals Motorboats Lamborginis",],
     },
     {
         question: "What year was JavaScript launched?",
-        subtitle: "None",
-        a: "1996",
-        b: "1995",
-        c: "1994",
-        d: "none of the above",
+        subtitle: "",
+        answer: [
+        "1996",
+        "1995",
+        "1994",
+        "none of the above",],
     },
 ];
 
@@ -39,14 +45,13 @@ const quizData = [
 //variable section
 let currentQuiz = 0;
 const qNum = document.getElementById("qNum");
-const answerEls = document.querySelectorAll('.answer');
 const questionEl = document.getElementById('question');
 const subEl = document.getElementById('subtitle');
 const a_text = document.getElementById('a_text');
 const b_text = document.getElementById('b_text');
 const c_text = document.getElementById('c_text');
 const d_text = document.getElementById('d_text');
-const submitBtn = document.getElementById('next');
+const submitBtn = document.getElementById('submit');
 const sub = document.querySelector('#submit').classList;
 
 const answerContentFade = () => document.querySelector("#answerContent").classList.toggle("fadeUp");
@@ -71,26 +76,53 @@ const fadeQuestion = () => {
 };
 
 function loadQuiz() {
-    deselectAnswers();
-
-    const currentQuizData = quizData[currentQuiz]
+    var node= document.getElementById("answerGroup");node.querySelectorAll('*').forEach(n => n.remove());
+   
+    const currentQuizData = quizData[currentQuiz];
 
     questionNum = currentQuiz + 1;
     totalQuestion = quizData.length;
     qNum.innerHTML = "Question " + questionNum + " /" + totalQuestion;
     questionEl.innerText = currentQuizData.question
     subEl.innerText = currentQuizData.subtitle;
-    a_text.innerText = currentQuizData.a;
-    b_text.innerText = currentQuizData.b;
-    c_text.innerText = currentQuizData.c;
-    d_text.innerText = currentQuizData.d;
+    let answerOption = currentQuizData.answer;
+
+    for (var i = 0; i < answerOption.length; i++) {
+        let input = document.createElement("input");
+        let label = document.createElement("label");
+
+        input.type = "radio";
+        input.name = "answer";
+        input.id = `${currentQuiz}.${i}`;
+        input.className = "answer";
+        
+        label.htmlFor = `${currentQuiz}.${i}`;
+        label.innerText = answerOption[i];
+        label.style = answerOption.length == 4 ? "flex: 2 0 30%" : "";
+        document.querySelector("#answerGroup").append(input, label);
+    }
+    
+
+    const answerEls = document.querySelectorAll('.answer');
+    answerEls.forEach(
+        anw => anw.addEventListener('click', enableBTN)
+    );
+
+
+
+    // a_text.innerText = currentQuizData.a;
+    // b_text.innerText = currentQuizData.b;
+    // c_text.innerText = currentQuizData.c;
+    // d_text.innerText = currentQuizData.d;
 }
 
-function deselectAnswers() {
+function deselectAnswers(answerEls) {
     answerEls.forEach(answerEl => answerEl.checked = false)
 }
 
 function enableBTN() {
+    const answerEls = document.querySelectorAll('.answer');
+    getSelected(answerEls);
     answerEls.forEach(answerEl => {
         if (answerEl.checked) {
             sub.add('changeColor');
@@ -100,12 +132,13 @@ function enableBTN() {
 
 }
 
-function getSelected() {
+function getSelected(answerEls) {
     let answer;
 
     answerEls.forEach(answerEl => {
         if (answerEl.checked) {
-            answer = answerEl.id
+            answer = answerEl.id;
+            console.log(answer);
         }
     })
 
@@ -114,7 +147,8 @@ function getSelected() {
 
 
 function nextQuestion() {
-    const answer = getSelected();
+    const answerEls = document.querySelectorAll('.answer');
+    const answer = getSelected(answerEls);
     if (answer) {
 
         currentQuiz++;
@@ -167,6 +201,8 @@ function questionPage() {
 questionPage();
 loadQuiz();
 submitBtn.addEventListener('click', nextQuestion);
-answerEls.forEach(
-    anw => anw.addEventListener('change', enableBTN)
-);
+// document.getElementsByTagName("label").addEventListener("click", enableBTN);
+// console.log(answerEls);
+// answerEls.forEach(
+//     anw => anw.addEventListener('click', enableBTN)
+// );
