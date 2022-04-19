@@ -142,7 +142,7 @@ window.onload = function () {
 
     }
 
-    
+
 
 
 
@@ -151,10 +151,6 @@ window.onload = function () {
     setTimeout(fade, 1500);
     infoProj();
     howToPage();
-
-    document.getElementById('findAgain').addEventListener('click',()=>{
-        window.location.reload();
-    });
 
 
 }

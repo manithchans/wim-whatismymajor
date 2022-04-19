@@ -13,6 +13,10 @@
     src: url(fonts/ProductSans-Bold.ttf);
 }
 
+body {
+    overflow: hidden;
+}
+
 Html {
     height: 100%;
     margin: 0px;
@@ -647,7 +651,7 @@ label {
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     padding: 4vh;
     border: 0.2vh solid;
-    flex: 2 0 30%;
+    flex: 2 0 20%;
     margin: 1vh;
     transition: 1s;
     font-size: 3vh;
@@ -658,7 +662,7 @@ label {
 }
 
 #answerGroup {
-    height: 61%;
+    /* height: 61%; */
     display: flex;
     flex-wrap: wrap;
 }
@@ -685,7 +689,6 @@ label:hover {
     top: 0px;
     position: relative;
     transition: opacity 1s cubic-bezier(1, 0, 0, 1);
-
 }
 
 #answerContent.fadeUp {
@@ -712,11 +715,17 @@ label:hover {
 
 #next {
     position: absolute;
+    display: flex;
+    justify-content: space-between;
     bottom: -5vh;
     right: -5vh;
     opacity: 0;
     transition: all 1s ease;
-    cursor: pointer;
+    width: 93%;
+}
+
+#next p{
+    font-size: 2vh;
 }
 
 #next.fadeIn {
@@ -727,6 +736,7 @@ label:hover {
 #submit.changeColor{
     background: -webkit-linear-gradient(0deg, #0099ff, #0000ff);
     color: white;
+    cursor: pointer;
 }
 
 #submit {
@@ -741,6 +751,6 @@ label:hover {
     text-align: center;
     font-size: 8vh;
     padding: 0.5vh 0 0 1vh;
-    cursor: pointer;
+    cursor: not-allowed;
     color: rgba(255, 255, 255, 0.163);
 }
