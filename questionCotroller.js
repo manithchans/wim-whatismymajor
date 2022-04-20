@@ -2,14 +2,15 @@
 const quizData = [
     {
         question: "Which language runs in a web browser?",
-        subtitle: "",
+        subtitle: "Hello world",
         answer: [
             "Java",
             "C",
             "Python",
             "JavaScript",
             "JavaScript",
-            "JavaScript",],
+            "JavaScript",
+        ],
     },
     {
         question: "What does CSS stand for?",
@@ -47,32 +48,21 @@ let currentQuiz = 0;
 const qNum = document.getElementById("qNum");
 const questionEl = document.getElementById('question');
 const subEl = document.getElementById('subtitle');
-const a_text = document.getElementById('a_text');
-const b_text = document.getElementById('b_text');
-const c_text = document.getElementById('c_text');
-const d_text = document.getElementById('d_text');
 const submitBtn = document.getElementById('submit');
 const sub = document.querySelector('#submit').classList;
 
 const answerContentFade = () => document.querySelector("#answerContent").classList.toggle("fadeUp");
-
 const answerHide = () => document.querySelector("#answerContent").classList.add("opacityZero");
-
 const nextButtonShow = () => document.querySelector("#next").classList.toggle("fadeIn");
-
 const showQuestionBg = () => document.querySelector("#querry #bg").classList.toggle("textFadeIn");
-
 const mainPageOnOff = () => document.querySelector("#centered").classList.toggle("fadeOut");
-
 const questionHeader = document.querySelector("#querry").classList;
 
 
 //function section
 const fadeQuestion = () => {
     sub.remove('changeColor');
-
     answerContentFade();
-
 };
 
 function loadQuiz() {

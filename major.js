@@ -128,6 +128,7 @@ function showMajor() {
             document.querySelector("#careerList").append(list);
         }
     );
+    
     choosenMajor.courseList.forEach(
         item => {
             let list = document.createElement("li");
