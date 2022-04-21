@@ -519,7 +519,7 @@ i {
     display: block;
 }
 
-#content:hover {
+/* #content:hover {
     animation: slide 35.0s ease;
 }
 
@@ -533,7 +533,7 @@ i {
     100% {
         top: -200vh;
     }
-}
+} */
 
 #profile {
     display: flex;
