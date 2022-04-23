@@ -79,7 +79,7 @@
 
 #majorName {
     width: 30vw;
-    height: 90vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
