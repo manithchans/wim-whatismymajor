@@ -12,170 +12,170 @@ const quizData = [
             "Public Park",
         ],
     },
-    {
-        question: "Which are your most enjoyable activity?",
-        subtitle: "Your daily hobbies that you always do.",
-        answer: [
-            "Reading books, articles, newspapers",
-            "Writing, Listening to Music/Podcast",
-            "Traveling, Shopping, Camping",
-            "Watching Videos, Dramas, Movies",
-        ],
-    },
-    {
-        question: "What skill do you think you are best at?",
-        subtitle: "",
-        answer: [
-            "Communication",
-            "Being attentive",
-            "Quick Learning",
-            "Memorizing",
-            "Analyzing",
-            "Problem-solving",
-        ],
-    },
-    {
-        question: "What skill do you think is your weakness?",
-        subtitle: "",
-        answer: [
-            "Communication",
-            "Being attentive",
-            "Quick Learning",
-            "Memorizing",
-            "Analyzing",
-            "Problem-solving",
-        ],
-    },
-    {
-        question: "Which type of person would you like to communicate with?",
-        subtitle: "You can think of your friend or family personality to answer this question.",
-        answer: [
-            "Talkative",
-            "Serious",
-            "Understandable",
-            "Energetic",
-            "Funny",
-            "no one",
-        ],
-    },
-    {
-        question: "Which of the following is best describe yourself as a person?",
-        subtitle: "What do you see yourselves? Look at the mirror!",
-        answer: [
-            "Active",
-            "Shy",
-            "Creative",
-            "Adventurous",
-            "Diligent",
-            "Considerate",
-        ],
-    },
-    {
-        question: "Which of the following you want to improve your country in the future?",
-        subtitle: "You can take times to think of this question",
-        answer: [
-            "A higher rate of nonviolent",
-            "Better and cleaner environment",
-            "Improvement of quality in technology",
-            "Sstable economy",
-            "Better connection with your neighbors",
-            "More accurate of information in publishment",
+    // {
+    //     question: "Which are your most enjoyable activity?",
+    //     subtitle: "Your daily hobbies that you always do.",
+    //     answer: [
+    //         "Reading books, articles, newspapers",
+    //         "Writing, Listening to Music/Podcast",
+    //         "Traveling, Shopping, Camping",
+    //         "Watching Videos, Dramas, Movies",
+    //     ],
+    // },
+    // {
+    //     question: "What skill do you think you are best at?",
+    //     subtitle: "",
+    //     answer: [
+    //         "Communication",
+    //         "Being attentive",
+    //         "Quick Learning",
+    //         "Memorizing",
+    //         "Analyzing",
+    //         "Problem-solving",
+    //     ],
+    // },
+    // {
+    //     question: "What skill do you think is your weakness?",
+    //     subtitle: "",
+    //     answer: [
+    //         "Communication",
+    //         "Being attentive",
+    //         "Quick Learning",
+    //         "Memorizing",
+    //         "Analyzing",
+    //         "Problem-solving",
+    //     ],
+    // },
+    // {
+    //     question: "Which type of person would you like to communicate with?",
+    //     subtitle: "You can think of your friend or family personality to answer this question.",
+    //     answer: [
+    //         "Talkative",
+    //         "Serious",
+    //         "Understandable",
+    //         "Energetic",
+    //         "Funny",
+    //         "No One",
+    //     ],
+    // },
+    // {
+    //     question: "Which of the following is best describe yourself as a person?",
+    //     subtitle: "What do you see yourselves? Look at the mirror!",
+    //     answer: [
+    //         "Active",
+    //         "Shy",
+    //         "Creative",
+    //         "Adventurous",
+    //         "Diligent",
+    //         "Considerate",
+    //     ],
+    // },
+    // {
+    //     question: "Which would you want to improve your country in the future?",
+    //     subtitle: "You can take times to think of this question",
+    //     answer: [
+    //         "A higher rate of nonviolent",
+    //         "Better and cleaner environment",
+    //         "Improvement of quality in technology",
+    //         "Sstable economy",
+    //         "Better connection with your neighbors",
+    //         "More accurate of information in publishment",
 
-        ],
-    },
-    {
-        question: "Which of the following that your friends and family would describe most about you?",
-        subtitle: "Somebody who used to describe about you, or what personality that public potray you.",
-        answer: [
-            "Stubborn person",
-            "Risk taker",
-            "Open-mind person",
-            "Generous person",
-            "Flexible person",
-            "Heart-kindness person",
-        ],
-    },
-    {
-        question: "Which of the following that you think you have the most understanding in?",
-        subtitle: "Most likely the things you used to learn from high school",
-        answer: [
-            "Global Warming",
-            "Profit and loss",
-            "Globalization",
-            "Free speech",
-            "Data gathering",
-            "Debating",
+    //     ],
+    // },
+    // {
+    //     question: "Which of the following that people would describe most about you?",
+    //     subtitle: "Your family or friends who used to describe about you, or what personality that public potray you.",
+    //     answer: [
+    //         "Stubborn person",
+    //         "Risk taker",
+    //         "Open-mind person",
+    //         "Generous person",
+    //         "Flexible person",
+    //         "Heart-kindness person",
+    //     ],
+    // },
+    // {
+    //     question: "Which of the following that you think you have the most understanding in?",
+    //     subtitle: "Most likely the things you used to learn from high school",
+    //     answer: [
+    //         "Global Warming",
+    //         "Profit and loss",
+    //         "Globalization",
+    //         "Free speech",
+    //         "Data gathering",
+    //         "Debating",
 
-        ],
-    },
-    {
-        question: "Which of the following types of movies would you like to watch the most?",
-        subtitle: "",
-        answer: [
-            "Adventure",
-            "Investment",
-            "Sci-fi",
-            "Historical",
-            "Legal drama",
-            "Documentary",
-        ],
-    },
-    {
-        question: "Which of the following activities would you like to try the most in the future?",
-        subtitle: "The new activity one you can think of you are going to do.",
-        answer: [
-            "Making new friends",
-            "Helping a community",
-            "Investing in Stocks",
-            "Joining a debate",
-            "Learning about privacy security",
-            "Assuring the information",
-        ],
-    },
-    {
-        question: "Which of the following youtube videos would you like to spend most of your time on watching?",
-        subtitle: "It can be videos from every social media like Facebook, Instagram or TikTok",
-        answer: [
-            "Wildlife documentaries",
-            "History documentaries",
-            "Traveling videos",
-            "News reporting",
-            "World Modern trending",
-            "Music videos",
-        ],
-    },
-    {
-        question: "Which of the following goodwills would you want to be involved in the most?",
-        subtitle: "",
-        answer: [
-            "Helping people in the rural community",
-            "Helping people to be accessible in information",
-            "Helping people to have the right",
-            "Helping people to decide a better future",
-        ],
-    },
-    {
-        question: "Which of the following subjects are you good at during high school?",
-        subtitle: "",
-        answer: [
-            "Mathematic, Physic, Chemistry",
-            "Literature, History, Geograpghy",
-            "Science, Biology, Earthology",
-            "Social Studies, Art, Ethics",
-        ],
-    },
-    {
-        question: "Which of the following experiences did you have in high school?",
-        subtitle: "",
-        answer: [
-            "Making money",
-            "Created somethings out of materials",
-            "Getting to know more friends",
-            "Going on a trip with friends",
-            "Studying, Group Discussing, Tutoring",
-            "All of the above",
-        ],
-    },
+    //     ],
+    // },
+    // {
+    //     question: "Which of the following types of movies would you like to watch the most?",
+    //     subtitle: "",
+    //     answer: [
+    //         "Adventure",
+    //         "Investment",
+    //         "Sci-fi",
+    //         "Historical",
+    //         "Legal drama",
+    //         "Documentary",
+    //     ],
+    // },
+    // {
+    //     question: "Which of the following activities would you like to try in the future?",
+    //     subtitle: "",
+    //     answer: [
+    //         "Making new friends",
+    //         "Helping a community",
+    //         "Investing in Stocks",
+    //         "Joining a debate",
+    //         "Learning about privacy security",
+    //         "Assuring the information",
+    //     ],
+    // },
+    // {
+    //     question: "Which of the following would you like to spend your time on watching?",
+    //     subtitle: "It can be videos from every social media like Youtube, Facebook, Instagram or TikTok",
+    //     answer: [
+    //         "Wildlife documentaries",
+    //         "History documentaries",
+    //         "Traveling videos",
+    //         "News reporting",
+    //         "World Modern trending",
+    //         "Music videos",
+    //     ],
+    // },
+    // {
+    //     question: "Which of the following goodwills would you want to be involved in the most?",
+    //     subtitle: "",
+    //     answer: [
+    //         "Helping people in the rural community",
+    //         "Helping people to be accessible in information",
+    //         "Helping people to have the right",
+    //         "Helping people to decide a better future",
+    //     ],
+    // },
+    // {
+    //     question: "Which of the following subjects are you good at during high school?",
+    //     subtitle: "",
+    //     answer: [
+    //         "Mathematic, Physic, Chemistry",
+    //         "Literature, History, Geograpghy",
+    //         "Science, Biology, Earthology",
+    //         "Social Studies, Art, Ethics",
+    //     ],
+    // },
+    // {
+    //     question: "Which of the following experiences did you have in high school?",
+    //     subtitle: "",
+    //     answer: [
+    //         "Making money",
+    //         "Created somethings out of materials",
+    //         "Getting to know more friends",
+    //         "Going on a trip with friends",
+    //         "Studying, Group Discussing, Tutoring",
+    //         "All of the above",
+    //     ],
+    // },
 ];
 
 const point = {
@@ -369,7 +369,7 @@ var answeredArr = [];
 function nextQuestion() {
     const answerEls = document.querySelectorAll('.answer');
     const answer = getSelected(answerEls);
-    answeredArr.push(answer);
+    answeredArr[Math.floor(answer)-1]= answer;
     if (answer) {
 
         currentQuiz++;

@@ -523,7 +523,7 @@ i {
     font-family: "PS-Light";
     text-align: center;
     font-size: 1.3vh;
-    padding: 0 5vh 0 5vh;
+    padding: 2vh 5vh 0 5vh;
 }
 
 #content p {
@@ -759,6 +759,7 @@ label:hover {
     background: -webkit-linear-gradient(0deg, #0099ff, #0000ff);
     color: white;
     cursor: pointer;
+    transform: translateX(0);
 }
 
 #submit {
@@ -775,6 +776,7 @@ label:hover {
     padding: 0.5vh 0 0 1vh;
     cursor: not-allowed;
     color: rgba(255, 255, 255, 0.163);
+    transform: translateX(40vh);
 }
 
 #load {
@@ -978,7 +980,7 @@ label:hover {
 
     #answerContent h3 {
         text-align: center;
-        padding: 2vh;
+        padding: 0 2vh 2vh 2vh;
     }
 
     #answerContent {
@@ -988,7 +990,7 @@ label:hover {
     #answerContent p {
         font-size: 1.5vh;
         text-align: center;
-        padding: 1% 20% 1% 20%;
+        padding: 1% 10% 1% 10%;
     }
 
 
@@ -1027,8 +1029,9 @@ label:hover {
     }
 
     #noteText {
-        font-size: 1vh;
-        padding:3vh 4vh 0 4vh;
+        font-size: 8px;
+        padding: 4vh 4vh 1vh 4vh;
         margin: 0;
+        text-align: justify;
     }
 }

@@ -148,7 +148,7 @@ a {
 }
 
 #labelText {
-    margin: 0;
+    margin: 15px;
     text-align: center;
 }
 
@@ -182,11 +182,7 @@ a {
 
     #majorPage h4 {
         font-size: 3vh;
-        padding: 3vh 0 3vh 0;
-    }
-
-    #findAgain {
-        margin-left: 0;
+        padding: 3vh;
     }
 
     #majorBg {
@@ -218,16 +214,18 @@ a {
 
     #findAgain {
         font-size: 3.5vw;
-        width: 95%;
+        height: auto;
+        border-radius: 2vh;
+        /* margin: 10px 0 0 0; */
     }
 
     #padding.fadePad {
         width: 99%;
     }
 
-    #homeBtn {
-        padding-top: 2vh;
-    }
+    /* #homeBtn {
+        display: flex;
+    } */
 
     #labelText{
         margin-top: 20px;
