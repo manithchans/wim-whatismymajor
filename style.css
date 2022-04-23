@@ -103,6 +103,16 @@ i {
 
 }
 
+.logoLoading {
+    background: url("assets/WIM-Logo.png") no-repeat center center;
+    background-size: 30%;
+    height: 20vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
 .title {
     text-align: center;
     font-weight: 100;
@@ -446,7 +456,6 @@ i {
     bottom: 0;
     z-index: 2;
     opacity: 0;
-    cursor: pointer;
     transition: all 0.7s ease;
 
 }
@@ -508,6 +517,13 @@ i {
 #content h3 {
     margin: 0;
     padding-left: 1vh;
+}
+
+#noteText {
+    font-family: "PS-Light";
+    text-align: center;
+    font-size: 1.3vh;
+    padding: 0 5vh 0 5vh;
 }
 
 #content p {
@@ -783,7 +799,7 @@ label:hover {
     display: block;
 }
 
-#loadingPage .logo {
+#loadingPage .logoLoading {
     opacity: 0;
     animation: blinker 1.5s infinite;
 }
@@ -846,6 +862,12 @@ label:hover {
         width: 100%;
         height: 0;
         padding-bottom: 100px;
+        margin-top: 6vh;
+    }
+
+    .logoLoading {
+        background-size: 50%;
+        width: 100%;
     }
 
     .header {
@@ -937,12 +959,21 @@ label:hover {
     }
 
     #content {
-        font-size: 3.7vh;
+        font-size: 3vh;
+    }
+
+    #content p {
+        font-size: 1.5vh;
+    }
+
+    #content h3 {
+        padding-left: 0vh;
     }
 
     #querry h4 {
         margin: 3vh 3vh 1vh 3vh;
         font-size: 2vh;
+
     }
 
     #answerContent h3 {
@@ -988,10 +1019,16 @@ label:hover {
 
     #questionCard {
         height: 70vh;
-        justify-content: space-around;
+        justify-content: center;
     }
 
-    #questionHead{
+    #questionHead {
         margin-bottom: 10px;
+    }
+
+    #noteText {
+        font-size: 1vh;
+        padding:3vh 4vh 0 4vh;
+        margin: 0;
     }
 }

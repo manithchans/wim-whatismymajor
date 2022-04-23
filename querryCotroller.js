@@ -71,7 +71,7 @@ const quizData = [
         ],
     },
     {
-        question: "Which of the following would you want to improve your country in the future?",
+        question: "Which of the following you want to improve your country in the future?",
         subtitle: "You can take times to think of this question",
         answer: [
             "A higher rate of nonviolent",
@@ -383,8 +383,8 @@ function nextQuestion() {
         } else {
             console.log(answeredArr);
             let major = caculatePoint(answeredArr);
-            let label_text = `Based on your personality, <br> WIM thinks your most suitable major is: <br>
-            -> [${answeredArr}]`;
+            let label_text = `<div id="labelText" style="text-align: center"> Based on your personality, <br> WIM thinks your most suitable major is: <br>
+            -> [${answeredArr}] </div>`;
             console.log(major);
 
             answerHide();
@@ -710,7 +710,9 @@ const majorData = {
 
 var choosenMajor = 'hi';
 let labelText = document.getElementById('labelText');
-let notes = "Note: The result is NOT 100% accurate, we analyzed your input based upon the research on major and personality, students' learning experiences, and the survey. We are hoping that WIM can ease your difficulty in finding your college major. Please seek guidance from your family, friends, and especially yourselves. Your Major, Your Choice, Your Future!"
+let notes = "<div id=\"noteText\"> Note: The result is NOT 100% accurate, we analyzed your input based upon the research on major and personality, students' learning experiences, and the survey. We are hoping that WIM can ease your difficulty in finding your college major. Please seek guidance from your family, friends, and especially yourselves. Your Major, Your Choice, Your Future! </div>"
+
+let texting = "<div id=\"labelText\" style=\"text-align: center\"> </div>"
 
 let majorIcon = document.getElementsByClassName('tooltip');
 
@@ -788,8 +790,8 @@ function showMajor(choosen_major, label) {
     let majorTitle = document.getElementById('majorTitle');
     let majorInfo = document.getElementById('majorInfo');
     let careerInfo = document.getElementById('careerInfo');
-    let labelText = document.getElementById('labelText');
-    let note = document.getElementById('noteText');
+    let labelText = document.getElementById('texting');
+    let note = document.getElementById('noted');
 
 
 

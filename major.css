@@ -163,9 +163,9 @@ a {
 
     #majorName {
         width: 96%;
-        height: 30%;
+        height: auto;
         justify-content: space-between;
-        padding: 0;
+        padding: 0 0 3vh 0;
     }
 
     #majorPage h3 {
@@ -182,6 +182,7 @@ a {
 
     #majorPage h4 {
         font-size: 3vh;
+        padding: 3vh 0 3vh 0;
     }
 
     #findAgain {
@@ -190,7 +191,7 @@ a {
 
     #majorBg {
         width: 92%;
-        height: 63%;
+        height: 70%;
     }
 
     #majorPage h2 {
@@ -226,5 +227,10 @@ a {
 
     #homeBtn {
         padding-top: 2vh;
+    }
+
+    #labelText{
+        margin-top: 20px;
+        font-size: 12px;
     }
 }
