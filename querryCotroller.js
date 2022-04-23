@@ -12,16 +12,16 @@ const quizData = [
             "Public Park",
         ],
     },
-    // {
-    //     question: "Which are your most enjoyable activity?",
-    //     subtitle: "Your daily hobbies that you always do.",
-    //     answer: [
-    //         "Reading books, articles, newspapers",
-    //         "Writing, Listening to Music/Podcast",
-    //         "Traveling, Shopping, Camping",
-    //         "Watching Videos, Dramas, Movies",
-    //     ],
-    // },
+    {
+        question: "Which are your most enjoyable activity?",
+        subtitle: "Your daily hobbies that you always do.",
+        answer: [
+            "Reading books, articles, newspapers",
+            "Writing, Listening to Music/Podcast",
+            "Traveling, Shopping, Camping",
+            "Watching Videos, Dramas, Movies",
+        ],
+    },
     // {
     //     question: "What skill do you think you are best at?",
     //     subtitle: "",

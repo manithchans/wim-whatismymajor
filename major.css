@@ -163,22 +163,17 @@ a {
 
     #majorName {
         width: 96%;
-        height: 0%;
-        flex-direction: row;
+        height: 30%;
         justify-content: space-between;
-        padding: 0 1vh 0 1vh;
+        padding: 0;
     }
 
     #majorPage h3 {
-        font-size: 0vh;
+        font-size: 2vh;
     }
 
     #home {
         padding-top: 24px;
-    }
-
-    #homeBtn {
-        padding-top: 12px;
     }
 
     #majorPageImg {
@@ -186,7 +181,7 @@ a {
     }
 
     #majorPage h4 {
-        font-size: 2vh;
+        font-size: 3vh;
     }
 
     #findAgain {
@@ -194,8 +189,8 @@ a {
     }
 
     #majorBg {
-        width: 90%;
-        margin-top: 8vh;
+        width: 92%;
+        height: 63%;
     }
 
     #majorPage h2 {
@@ -218,5 +213,18 @@ a {
         width: 100%;
         padding-left: 0;
         padding-top: 10px;
+    }
+
+    #findAgain {
+        font-size: 3.5vw;
+        width: 95%;
+    }
+
+    #padding.fadePad {
+        width: 99%;
+    }
+
+    #homeBtn {
+        padding-top: 2vh;
     }
 }

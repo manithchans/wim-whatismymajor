@@ -907,9 +907,7 @@ label:hover {
         width: 100px;
     }
 
-    #next{
-        transform: translateX(-200px);
-    }
+    
 
     #bigSize{
         font-size: 6vw;
@@ -942,4 +940,51 @@ label:hover {
         font-size: 3.7vh;
     }
 
+    #querry h4 {
+        margin: 3vh 3vh 1vh 3vh;
+        font-size: 2vh;
+    }
+
+    #answerContent h3 {
+        padding-left: 1vh;
+        padding-right: 0;
+        text-align: center;
+        padding-top: 2vh;
+    }
+
+    #answerContent {
+        font-size: 3vh;
+    }
+
+    #answerContent p {
+        font-size: 2vh;
+        text-align: center;
+        padding: 5% 1% 1% 1%;
+    }
+
+    #answerGroup {
+        height: 61%;
+    }
+
+    label {
+        text-align: center;
+        font-size: 2vh;
+        padding: 3vh;
+    }
+
+    #next{
+        transform: translateX(-200px);
+    }
+
+    #next.fadeIn {
+        transform: translateX(0px);
+    }
+
+    #next p {
+        font-size: 1.5vh;
+      }
+
+      #submit {
+        margin-right: 3vh;
+      }
 }
