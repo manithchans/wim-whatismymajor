@@ -75,6 +75,10 @@ Html {
     opacity: 0;
 }
 
+#centered.hide {
+    display: none;
+}
+
 i {
     cursor: pointer;
 }
@@ -617,11 +621,11 @@ i {
     opacity: 1;
 }
 
-#querry.fadeO{
+#querry.fadeO {
     opacity: 0;
 }
 
-#querry.fadeWH{
+#querry.fadeWH {
     width: 0%;
     height: 0%;
 }
@@ -657,6 +661,7 @@ label {
     font-size: 3vh;
     cursor: pointer;
 }
+
 #over {
     position: absolute;
 }
@@ -671,7 +676,7 @@ input {
     display: none;
 }
 
-input:checked + label {
+input:checked+label {
     background: -webkit-linear-gradient(0deg, #0099ff, #0000ff);
 }
 
@@ -725,7 +730,7 @@ label:hover {
     width: 93%;
 }
 
-#next p{
+#next p {
     font-size: 2vh;
 }
 
@@ -734,7 +739,7 @@ label:hover {
     right: 0;
 }
 
-#submit.changeColor{
+#submit.changeColor {
     background: -webkit-linear-gradient(0deg, #0099ff, #0000ff);
     color: white;
     cursor: pointer;
@@ -754,4 +759,187 @@ label:hover {
     padding: 0.5vh 0 0 1vh;
     cursor: not-allowed;
     color: rgba(255, 255, 255, 0.163);
+}
+
+#load {
+    animation: all 2s ease;
+    opacity: 0;
+    width: 0;
+    display: none;
+}
+
+#loadingPage {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#load.showLoad {
+    opacity: 1;
+    width: 100%;
+    display: block;
+}
+
+#loadingPage .logo {
+    opacity: 0;
+    animation: blinker 1.5s infinite;
+}
+
+#loadingPage p {
+    font-size: 2.5vh;
+    margin: 0;
+}
+
+@keyframes blinker {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    Html {
+        background-size: 2000% 200%;
+    }
+
+
+
+    @keyframes zoom {
+        0% {
+            background-size: 2000% 900%;
+        }
+
+        50% {
+            background-size: 1300% 300%;
+        }
+
+        70% {
+            background-size: 1120% 120%;
+        }
+
+        90% {
+            background-size: 1110% 110%;
+        }
+
+        90% {
+            background-size: 1100% 100%;
+        }
+
+        100% {
+            background-size: 2000% 900%;
+        }
+    }
+
+    .logo {
+        background-size: 50%;
+        width: 100%;
+        height: 0;
+        padding-bottom: 100px;
+    }
+
+    .header {
+        font-size: 6vw;
+    }
+
+    #groupTitle {
+        flex-direction: column;
+        margin-top: 10vh;
+    }
+
+    .title {
+        font-size: 12vw;
+        letter-spacing: 0px;
+    }
+
+    #findMajor {
+        margin: 70px 25vw 20px 25vw;
+        font-size: 3vw;
+    }
+
+    #findMajor:hover {
+        font-size: 4vw;
+        margin: 70px 20vw 20px 20vw;
+    }
+
+    #group {
+        margin-top: 12vh;
+        padding: 0;
+    }
+
+    #ourMajor {
+        font-size: 1.5vh;
+    }
+
+    #group2{
+        margin-top: 1vh;
+        padding: 0;  
+        margin-bottom: 7vh;
+    }
+
+    #line{
+        width: 30vw;
+    }
+
+    #group2 i {
+        font-size: 4.5vw;
+    }
+
+    .footer{
+        font-size: 2.5vw;
+        width: 50vw;
+        left: 25%;
+    }
+
+    .tooltipText {
+        top: 130%;
+        font-size: 2vw;
+        width: 100px;
+    }
+
+    #next{
+        transform: translateX(-200px);
+    }
+
+    #majorPage{
+        transform: translateX(-200px);
+    }
+
+    #bigSize{
+        font-size: 6vw;
+    }
+
+    #profile{
+        flex-direction: column;
+    }
+
+    #profile img {
+        width: 100%;
+        padding-left: 0;
+        padding-top: 20px;
+    }
+
+    #infoLogo p {
+        font-size: 2vw;
+    }
+    
+    #infoLogo h3 {
+        font-size: 3.2vw;
+    }
+    
+    #infoLogo img {
+        width: 45vw;
+        padding-bottom: 1vh;
+    }
+
 }

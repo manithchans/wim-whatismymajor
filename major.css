@@ -15,7 +15,7 @@
 #majorPage {
     display: flex;
     justify-content: space-between;
-    padding: 4vh;
+    padding:4vh;
 }
 
 
@@ -50,7 +50,7 @@
     width: 60%;
     transition: all 1s ease;
     padding: 2%;
-    height: 78vh;
+    height: 83vh;
     overflow: scroll;
     scrollbar-width: thin;
     scrollbar-color: #ffffff #e4e4e400;
@@ -76,13 +76,17 @@
 
 #majorName {
     width: 30vw;
-    height: 85vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content:space-between;
     text-align: center;
     transition: all 1s ease;
     transform: translateX(-300vh);
+}
+
+#home {
+    padding-top: 6vh;
 }
 
 #majorName.slide {

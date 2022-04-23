@@ -12,28 +12,28 @@ const quizData = [
             "Public Park",
         ],
     },
-    {
-        question: "Which are your most enjoyable activity?",
-        subtitle: "Your daily hobbies that you always do.",
-        answer: [
-            "Reading books, articles, newspapers",
-            "Writing, Listening to Music/Podcast",
-            "Traveling, Shopping, Camping",
-            "Watching Videos, Dramas, Movies",
-        ],
-    },
-    {
-        question: "What skill do you think you are best at?",
-        subtitle: "",
-        answer: [
-            "Communication",
-            "Being attentive",
-            "Quick Learning",
-            "Memorizing",
-            "Analyzing",
-            "Problem-solving",
-        ],
-    },
+    // {
+    //     question: "Which are your most enjoyable activity?",
+    //     subtitle: "Your daily hobbies that you always do.",
+    //     answer: [
+    //         "Reading books, articles, newspapers",
+    //         "Writing, Listening to Music/Podcast",
+    //         "Traveling, Shopping, Camping",
+    //         "Watching Videos, Dramas, Movies",
+    //     ],
+    // },
+    // {
+    //     question: "What skill do you think you are best at?",
+    //     subtitle: "",
+    //     answer: [
+    //         "Communication",
+    //         "Being attentive",
+    //         "Quick Learning",
+    //         "Memorizing",
+    //         "Analyzing",
+    //         "Problem-solving",
+    //     ],
+    // },
     // {
     //     question: "What skill do you think is your weakness?",
     //     subtitle: "",
@@ -296,6 +296,7 @@ const nextButtonShow = () => document.querySelector("#next").classList.toggle("f
 const showQuestionBg = () => document.querySelector("#querry #bg").classList.toggle("textFadeIn");
 const mainPageOnOff = () => document.querySelector("#centered").classList.toggle("fadeOut");
 const questionHeader = document.querySelector("#querry").classList;
+const loadingPage = document.querySelector("#load").classList;
 
 
 //function section
@@ -382,9 +383,9 @@ function nextQuestion() {
         } else {
             console.log(answeredArr);
             let major = caculatePoint(answeredArr);
-            let label_text = "Based on your personality, <br> WIM thinks your most suitable major is:"
+            let label_text = `Based on your personality, <br> WIM thinks your most suitable major is: <br>
+            -> [${answeredArr}]`;
             console.log(major);
-            showMajor(major, label_text);
 
             answerHide();
 
@@ -396,8 +397,18 @@ function nextQuestion() {
             }, 800);
 
             setTimeout(function () {
+                loadingPage.toggle("showLoad");
                 questionHeader.add("fadeWH");
+                document.getElementById("centered").classList.toggle('hide');
             }, 1500);
+
+            setTimeout(function(){
+                showMajor(major, label_text);
+            },5700);
+
+            setTimeout(function(){
+                loadingPage.toggle("showLoad");
+            },7000);
         }
     }
 }
@@ -517,7 +528,7 @@ const majorData = {
     },
 
     'BUS': {
-        majorName: "Information Technology Management",
+        majorName: "Business",
         majorAbv: "ITM",
         majorInfo: "The Information Technology Management (ITM) program is designed to develop professionals in emerging and converging information and communication technologies. A degree in ITM produces graduates who can organize business processes to support the strategic corporate needs, demands and goals at the management level. The program is designed to bridge the gap between problems of business and the capabilities of information technology, while aligning the technology with business strategies. Students enhance their critical thinking, problem solving, and analytical skills with knowledge of management principles. The program is a balance of technology, management, communications and the liberal arts.",
         careerInfo: "Students are prepared for positions in technology and management fields, such as, for example, local and national government, telecommunications, financial institutions, corporate or educational IT units, private business and NGO’s. Graduates will have the necessary knowledge, experience and skills to enter technology related careers in business and management. Job opportunities include, but are not limited to:",
@@ -553,7 +564,7 @@ const majorData = {
     },
 
     'Law': {
-        majorName: "Information Technology Management",
+        majorName: "Law",
         majorAbv: "ITM",
         majorInfo: "The Information Technology Management (ITM) program is designed to develop professionals in emerging and converging information and communication technologies. A degree in ITM produces graduates who can organize business processes to support the strategic corporate needs, demands and goals at the management level. The program is designed to bridge the gap between problems of business and the capabilities of information technology, while aligning the technology with business strategies. Students enhance their critical thinking, problem solving, and analytical skills with knowledge of management principles. The program is a balance of technology, management, communications and the liberal arts.",
         careerInfo: "Students are prepared for positions in technology and management fields, such as, for example, local and national government, telecommunications, financial institutions, corporate or educational IT units, private business and NGO’s. Graduates will have the necessary knowledge, experience and skills to enter technology related careers in business and management. Job opportunities include, but are not limited to:",
@@ -589,7 +600,7 @@ const majorData = {
     },
 
     'GLA': {
-        majorName: "Information Technology Management",
+        majorName: "Global Affairs",
         majorAbv: "ITM",
         majorInfo: "The Information Technology Management (ITM) program is designed to develop professionals in emerging and converging information and communication technologies. A degree in ITM produces graduates who can organize business processes to support the strategic corporate needs, demands and goals at the management level. The program is designed to bridge the gap between problems of business and the capabilities of information technology, while aligning the technology with business strategies. Students enhance their critical thinking, problem solving, and analytical skills with knowledge of management principles. The program is a balance of technology, management, communications and the liberal arts.",
         careerInfo: "Students are prepared for positions in technology and management fields, such as, for example, local and national government, telecommunications, financial institutions, corporate or educational IT units, private business and NGO’s. Graduates will have the necessary knowledge, experience and skills to enter technology related careers in business and management. Job opportunities include, but are not limited to:",
@@ -625,7 +636,7 @@ const majorData = {
     },
 
     'ICT': {
-        majorName: "Information Technology Management",
+        majorName: "Information Communications and Technology",
         majorAbv: "ITM",
         majorInfo: "The Information Technology Management (ITM) program is designed to develop professionals in emerging and converging information and communication technologies. A degree in ITM produces graduates who can organize business processes to support the strategic corporate needs, demands and goals at the management level. The program is designed to bridge the gap between problems of business and the capabilities of information technology, while aligning the technology with business strategies. Students enhance their critical thinking, problem solving, and analytical skills with knowledge of management principles. The program is a balance of technology, management, communications and the liberal arts.",
         careerInfo: "Students are prepared for positions in technology and management fields, such as, for example, local and national government, telecommunications, financial institutions, corporate or educational IT units, private business and NGO’s. Graduates will have the necessary knowledge, experience and skills to enter technology related careers in business and management. Job opportunities include, but are not limited to:",
@@ -661,7 +672,7 @@ const majorData = {
     },
 
     'THM': {
-        majorName: "Information Technology Management",
+        majorName: "Tourism and Hospitality Management",
         majorAbv: "ITM",
         majorInfo: "The Information Technology Management (ITM) program is designed to develop professionals in emerging and converging information and communication technologies. A degree in ITM produces graduates who can organize business processes to support the strategic corporate needs, demands and goals at the management level. The program is designed to bridge the gap between problems of business and the capabilities of information technology, while aligning the technology with business strategies. Students enhance their critical thinking, problem solving, and analytical skills with knowledge of management principles. The program is a balance of technology, management, communications and the liberal arts.",
         careerInfo: "Students are prepared for positions in technology and management fields, such as, for example, local and national government, telecommunications, financial institutions, corporate or educational IT units, private business and NGO’s. Graduates will have the necessary knowledge, experience and skills to enter technology related careers in business and management. Job opportunities include, but are not limited to:",
@@ -699,12 +710,14 @@ const majorData = {
 
 var choosenMajor = 'hi';
 let labelText = document.getElementById('labelText');
+let notes = "Note: The result is NOT 100% accurate, we analyzed your input based upon the research on major and personality, students' learning experiences, and the survey. We are hoping that WIM can ease your difficulty in finding your college major. Please seek guidance from your family, friends, and especially yourselves. Your Major, Your Choice, Your Future!"
 
 let majorIcon = document.getElementsByClassName('tooltip');
 
 for (key of document.getElementsByClassName('BUS')) {
     key.addEventListener('click', () => {
         console.log("clicked BUS");
+        hideHomepage();
         showMajor("BUS", "");
     });
 }
@@ -712,6 +725,7 @@ for (key of document.getElementsByClassName('BUS')) {
 for (key of document.getElementsByClassName('LAW')) {
     key.addEventListener('click', () => {
         console.log("clicked LAW");
+        hideHomepage();
         showMajor("Law", "");
     });
 }
@@ -719,6 +733,7 @@ for (key of document.getElementsByClassName('LAW')) {
 for (key of document.getElementsByClassName('GLA')) {
     key.addEventListener('click', () => {
         console.log("clicked GLA");
+        hideHomepage();
         showMajor("GLA", "");
     });
 }
@@ -742,6 +757,7 @@ for (key of document.getElementsByClassName('THM')) {
 for (key of document.getElementsByClassName('ICT')) {
     key.addEventListener('click', () => {
         console.log("clicked ICT");
+        hideHomepage();
         showMajor("ICT", "");
     });
 }
@@ -773,6 +789,7 @@ function showMajor(choosen_major, label) {
     let majorInfo = document.getElementById('majorInfo');
     let careerInfo = document.getElementById('careerInfo');
     let labelText = document.getElementById('labelText');
+    let note = document.getElementById('noteText');
 
 
 
@@ -781,6 +798,7 @@ function showMajor(choosen_major, label) {
     majorTitle.innerHTML = `What is ${choosenMajor.majorAbv}?`;
     majorInfo.innerHTML = choosenMajor.majorInfo;
     careerInfo.innerHTML = choosenMajor.careerInfo;
+    note.innerHTML =  label == "" ? "" : notes; 
 
     choosenMajor.careerList.forEach(
         item => {
