@@ -911,10 +911,6 @@ label:hover {
         transform: translateX(-200px);
     }
 
-    #majorPage{
-        transform: translateX(-200px);
-    }
-
     #bigSize{
         font-size: 6vw;
     }
@@ -940,6 +936,10 @@ label:hover {
     #infoLogo img {
         width: 45vw;
         padding-bottom: 1vh;
+    }
+
+    #content {
+        font-size: 3.7vh;
     }
 
 }
