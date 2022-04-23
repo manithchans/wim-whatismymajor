@@ -854,7 +854,7 @@ label:hover {
 
     #groupTitle {
         flex-direction: column;
-        margin-top: 10vh;
+        margin-top: 5vh;
     }
 
     .title {
@@ -881,13 +881,13 @@ label:hover {
         font-size: 1.5vh;
     }
 
-    #group2{
+    #group2 {
         margin-top: 1vh;
-        padding: 0;  
+        padding: 0;
         margin-bottom: 7vh;
     }
 
-    #line{
+    #line {
         width: 30vw;
     }
 
@@ -895,7 +895,7 @@ label:hover {
         font-size: 4.5vw;
     }
 
-    .footer{
+    .footer {
         font-size: 2.5vw;
         width: 50vw;
         left: 25%;
@@ -907,13 +907,13 @@ label:hover {
         width: 100px;
     }
 
-    
 
-    #bigSize{
+
+    #bigSize {
         font-size: 6vw;
     }
 
-    #profile{
+    #profile {
         flex-direction: column;
     }
 
@@ -926,11 +926,11 @@ label:hover {
     #infoLogo p {
         font-size: 2vw;
     }
-    
+
     #infoLogo h3 {
         font-size: 3.2vw;
     }
-    
+
     #infoLogo img {
         width: 45vw;
         padding-bottom: 1vh;
@@ -946,10 +946,8 @@ label:hover {
     }
 
     #answerContent h3 {
-        padding-left: 1vh;
-        padding-right: 0;
         text-align: center;
-        padding-top: 2vh;
+        padding: 2vh;
     }
 
     #answerContent {
@@ -957,22 +955,20 @@ label:hover {
     }
 
     #answerContent p {
-        font-size: 2vh;
+        font-size: 1.5vh;
         text-align: center;
-        padding: 5% 1% 1% 1%;
+        padding: 1% 20% 1% 20%;
     }
 
-    #answerGroup {
-        height: 61%;
-    }
 
     label {
         text-align: center;
-        font-size: 2vh;
-        padding: 3vh;
+        font-size: 15px;
+        border-radius: 6vw;
+        padding: 4%;
     }
 
-    #next{
+    #next {
         transform: translateX(-200px);
     }
 
@@ -982,9 +978,20 @@ label:hover {
 
     #next p {
         font-size: 1.5vh;
-      }
+    }
 
-      #submit {
+    #submit {
         margin-right: 3vh;
-      }
+        width: 10vh;
+        border-radius: 3vw;
+    }
+
+    #questionCard {
+        height: 70vh;
+        justify-content: space-around;
+    }
+
+    #questionHead{
+        margin-bottom: 10px;
+    }
 }
