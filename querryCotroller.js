@@ -380,10 +380,34 @@ function nextQuestion() {
             }, 1000);
         } else {
             console.log(answeredArr);
-            let major = caculatePoint(answeredArr);
+            let point = caculatePoint(answeredArr);
             let label_text = `<div id="labelText" style="text-align: center"> Based on your personality, <br> WIM thinks your most suitable major is: <br>
-            -> [${answeredArr}] </div>`;
-            console.log(major);
+            -> [${answeredArr}] <br> [${point}] </div>`;
+            console.log(point);
+
+            let majorNo = point.indexOf(Math.max(...point));
+            let major;
+
+            switch (majorNo) {
+                case 0:
+                    major = 'BUS';
+                    break;
+                case 1:
+                    major = 'Law';
+                    break;
+                case 2:
+                    major = 'GLA';
+                    break;
+                case 3:
+                    major = 'ITM';
+                    break;
+                case 4:
+                    major = 'ICT';
+                    break;
+                case 5:
+                    major = 'THM';
+                    break;
+            }
 
             answerHide();
 
@@ -430,31 +454,7 @@ function caculatePoint(answered) {
     console.log(gradeArr);
     console.log(pointArr);
 
-    let majorNo = pointArr.indexOf(Math.max(...pointArr));
-    let major;
-
-    switch (majorNo) {
-        case 0:
-            major = 'BUS';
-            break;
-        case 1:
-            major = 'Law';
-            break;
-        case 2:
-            major = 'GLA';
-            break;
-        case 3:
-            major = 'ITM';
-            break;
-        case 4:
-            major = 'ICT';
-            break;
-        case 5:
-            major = 'THM';
-            break;
-    }
-
-    return major;
+    return pointArr;
 }
 
 function questionPage() {
