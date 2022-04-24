@@ -4,176 +4,174 @@ const quizData = [
         question: "What place do you prefer to be at most to complete your assignments?",
         subtitle: "Place where enjoy doing your homeworks or review the lesson.",
         answer: [
-            "Library",
-            "Office",
-            "Classes",
-            "Coffee Shop",
-            "Your Room",
-            "Public Park",
+            "Library", //15/25/20/10/10/20
+            "Office", //20/25/15/15/15/10
+            "Classes", //15/20/25/10/10/20
+            "Coffee Shop", //25/10/15/10/15/25
+            "Your Room", //10/20/15/20/25/10
+            "Public Park", //25/15/20/5/5/30
         ],
     },
     {
         question: "Which are your most enjoyable activity?",
         subtitle: "Your daily hobbies that you always do.",
         answer: [
-            "Reading books, articles, newspapers",
-            "Writing, Listening to Music/Podcast",
-            "Traveling, Shopping, Camping",
-            "Watching Videos, Dramas, Movies",
+            "Reading books, articles, newspapers", //20/25/25/5/10/15
+            "Writing, Listening to Music/Podcast", //15/20/15/20/15/15
+            "Traveling, Shopping, Camping", //20/10/20/10/15/25
+            "Watching Videos, Dramas, Movies", //20/15/15/15/15/20
         ],
     },
     {
         question: "What skill do you think you are best at?",
         subtitle: "",
         answer: [
-            "Communication",
-            "Being attentive",
-            "Quick Learning",
-            "Memorizing",
-            "Analyzing",
-            "Problem-solving",
+            "Communication", //20/15/20/10/15/20
+            "Being attentive", //15/25/20/10/15/15
+            "Quick Learning", //15/20/15/15/20/15
+            "Memorizing", //15/20/20/15/15/15
+            "Analyzing", //15/15/10/25/30/5
+            "Problem-solving", //20/15/15/15/20/15
         ],
     },
     {
         question: "What skill do you think is your weakness?",
         subtitle: "",
         answer: [
-            "Communication",
-            "Being attentive",
-            "Quick Learning",
-            "Memorizing",
-            "Analyzing",
-            "Problem-solving",
+            "Communication", //10/10/10/30/25/10
+            "Being attentive", //10/20/10/30/20/10
+            "Quick Learning", //20/10/20/20/10/20
+            "Memorizing", //20/10/15/20/20/15
+            "Analyzing", //15/25/15/15/15/15
+            "Problem-solving", //15/20/15/20/15/15
         ],
     },
     {
         question: "Which type of person would you like to communicate with?",
         subtitle: "You can think of your friend or family personality to answer this question.",
         answer: [
-            "Talkative",
-            "Serious",
-            "Understandable",
-            "Energetic",
-            "Funny",
-            "No One",
+            "Talkative", //25/15/20/10/5/25
+            "Serious", //15/20/20/15/15/15
+            "Understandable", //20/15/15/15/20/15
+            "Energetic", //15/15/15/20/20/15
+            "Funny", //25/10/15/10/15/25
+            "No One", //10/15/10/25/20/15
         ],
     },
     {
         question: "Which of the following is best describe yourself as a person?",
         subtitle: "What do you see yourselves? Look at the mirror!",
         answer: [
-            "Active",
-            "Shy",
-            "Creative",
-            "Adventurous",
-            "Diligent",
-            "Considerate",
+            "Active", //20/20/15/15/10/20
+            "Shy", //15/15/15/20/20/15
+            "Creative", //20/10/10/20/20/20
+            "Adventurous", //15/15/15/15/15/25
+            "Diligent", //20/20/20/10/10/20
+            "Considerate", //15/20/15/15/20/15
         ],
     },
     {
         question: "Which would you want to improve your country in the future?",
         subtitle: "You can take times to think of this question",
         answer: [
-            "A higher rate of nonviolent",
-            "Better and cleaner environment",
-            "Improvement of quality in technology",
-            "Sstable economy",
-            "Better connection with your neighbors",
-            "More accurate of information in publishment",
-
+            "A higher rate of nonviolent", //15/35/35/0/0/15
+            "Better and cleaner environment", //10/15/30/0/0/45
+            "Improvement of quality in technology", //15/0/5/35/35/10
+            "Stable economy", //35/0/35/0/0/30
+            "Better connection with your neighbors", //10/10/35/5/10/30
+            "More accurate of information in publishment", //15/30/20/10/10/15
         ],
     },
     {
         question: "Which of the following that people would describe most about you?",
         subtitle: "Your family or friends who used to describe about you, or what personality that public potray you.",
         answer: [
-            "Stubborn person",
-            "Risk taker",
-            "Open-mind person",
-            "Generous person",
-            "Flexible person",
-            "Heart-kindness person",
+            "Stubborn person", //15/20/10/15/15/25
+            "Risk taker", //25/10/20/10/15/20
+            "Open-mind person", //15/25/20/10/15/15
+            "Generous person", //10/15/25/15/15/20
+            "Flexible person", //15/10/20/25/15/15
+            "Heart-kindness person", //10/15/20/15/20/20
         ],
     },
     {
         question: "Which of the following that you think you have the most understanding in?",
         subtitle: "Most likely the things you used to learn from high school",
         answer: [
-            "Global Warming",
-            "Profit and loss",
-            "Globalization",
-            "Free speech",
-            "Data gathering",
-            "Debating",
-
+            "Global Warming", //10/15/30/10/10/25
+            "Profit and loss", //25/15/5/15/15/25
+            "Globalization", //15/15/20/15/15/20
+            "Free speech", //15/25/20/10/15/15
+            "Data gathering", //10/10/10/30/30/10
+            "Debating", //15/35/25/5/5/15
         ],
     },
     {
         question: "Which of the following types of movies would you like to watch the most?",
         subtitle: "",
         answer: [
-            "Adventure",
-            "Investment",
-            "Sci-fi",
-            "Historical",
-            "Legal drama",
-            "Documentary",
+            "Adventure", //10/15/30/10/10/25
+            "Investment", //25/10/10/15/15/25
+            "Sci-fi", //10/15/15/25/20/15
+            "Historical", //10/15/30/10/10/25
+            "Legal drama", //15/40/20/5/5/15
+            "Documentary", //20/20/20/10/10/20
         ],
     },
     {
         question: "Which of the following activities would you like to try in the future?",
         subtitle: "",
         answer: [
-            "Making new friends",
-            "Helping a community",
-            "Investing in Stocks",
-            "Joining a debate",
-            "Learning about privacy security",
-            "Assuring the information",
+            "Making new friends", //25/10/20/10/15/20
+            "Helping a community", //15/15/20/10/10/30
+            "Investing in Stocks", //25/5/10/20/20/20
+            "Joining a debate", //10/35/20/10/10/15
+            "Learning about privacy security", //15/15/10/25/20/15
+            "Assuring the information", //10/15/15/25/30/5
         ],
     },
     {
         question: "Which of the following would you like to spend your time on watching?",
         subtitle: "It can be videos from every social media like Youtube, Facebook, Instagram or TikTok",
         answer: [
-            "Wildlife documentaries",
-            "History documentaries",
-            "Traveling videos",
-            "News reporting",
-            "World Modern trending",
-            "Music videos",
+            "Wildlife documentaries", //10/10/25/10/15/30
+            "History documentaries", //10/25/25/10/10/20
+            "Traveling videos", //20/10/20/10/10/30
+            "News reporting", //10/20/25/15/25/5
+            "World Modern trending", //15/10/20/20/15/20
+            "Music videos", //25/10/10/15/15/25
         ],
     },
     {
         question: "Which of the following goodwills would you want to be involved in the most?",
         subtitle: "",
         answer: [
-            "Helping people in the rural community",
-            "Helping people to be accessible in information",
-            "Helping people to have the right",
-            "Helping people to decide a better future",
+            "Helping people in the rural community", //10/20/20/5/15/30
+            "Helping people to be accessible in information", //10/15/20/20/20/15
+            "Helping people to have the right", //10/35/20/10/10/15
+            "Helping people to decide a better future", //30/10/20/10/10/20
         ],
     },
     {
         question: "Which of the following subjects are you good at during high school?",
         subtitle: "",
         answer: [
-            "Mathematic, Physic, Chemistry",
-            "Literature, History, Geograpghy",
-            "Science, Biology, Earthology",
-            "Social Studies, Art, Ethics",
+            "Mathematic, Physic, Chemistry", //10/0/0/40/50/0
+            "Literature, History, Geograpghy", //15/25/35/0/0/25
+            "Science, Biology, Earthology", //5/5/5/25/30/30
+            "Social Studies, Art, Ethics", //25/25/25/0/0/25
         ],
     },
     {
         question: "Which of the following experiences did you have in high school?",
         subtitle: "",
         answer: [
-            "Making money",
-            "Created somethings out of materials",
-            "Getting to know more friends",
-            "Going on a trip with friends",
-            "Studying, Group Discussing, Tutoring",
-            "All of the above",
+            "Making money", //25/10/15/10/15/25
+            "Created somethings out of materials", //15/0/0/35/30/20
+            "Getting to know more friends", //30/5/25/5/5/30
+            "Going on a trip with friends", //15/15/25/10/10/25
+            "Studying, Group Discussing, Tutoring", //25/20/25/5/0/25
+            "All of the above", //20/15/15/15/15/20
         ],
     },
 ];
