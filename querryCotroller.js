@@ -420,14 +420,13 @@ function caculatePoint(answered) {
         gradeArr[answered.indexOf(item)] = point[item];
     });
 
+
     for (let i = 0; i < 6; i++) {
         let score = 0;
         for (let j = 0; j < gradeArr.length; j++) {
             score += gradeArr[j][i];
         }
-
         pointArr.push(score);
-
     }
 
     console.log(gradeArr);
@@ -450,10 +449,10 @@ function caculatePoint(answered) {
             major = 'ITM';
             break;
         case 4:
-            major = 'THM';
+            major = 'ICT';
             break;
         case 5:
-            major = 'ICT';
+            major = 'THM';
             break;
     }
 
