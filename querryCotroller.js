@@ -1,6 +1,7 @@
 //data Section
 const quizData = [
     {
+        //1
         question: "What place do you prefer to be at most to complete your assignments?",
         subtitle: "Place where enjoy doing your homeworks or review the lesson.",
         answer: [
@@ -13,6 +14,7 @@ const quizData = [
         ],
     },
     {
+        //2
         question: "Which are your most enjoyable activity?",
         subtitle: "Your daily hobbies that you always do.",
         answer: [
@@ -23,6 +25,7 @@ const quizData = [
         ],
     },
     {
+        //3
         question: "What skill do you think you are best at?",
         subtitle: "",
         answer: [
@@ -35,6 +38,7 @@ const quizData = [
         ],
     },
     {
+        //4
         question: "What skill do you think is your weakness?",
         subtitle: "",
         answer: [
@@ -47,6 +51,7 @@ const quizData = [
         ],
     },
     {
+        //5
         question: "Which type of person would you like to communicate with?",
         subtitle: "You can think of your friend or family personality to answer this question.",
         answer: [
@@ -59,6 +64,7 @@ const quizData = [
         ],
     },
     {
+        //6
         question: "Which of the following is best describe yourself as a person?",
         subtitle: "What do you see yourselves? Look at the mirror!",
         answer: [
@@ -71,6 +77,7 @@ const quizData = [
         ],
     },
     {
+        //7
         question: "Which would you want to improve your country in the future?",
         subtitle: "You can take times to think of this question",
         answer: [
@@ -83,6 +90,7 @@ const quizData = [
         ],
     },
     {
+        //8
         question: "Which of the following that people would describe most about you?",
         subtitle: "Your family or friends who used to describe about you, or what personality that public potray you.",
         answer: [
@@ -95,6 +103,7 @@ const quizData = [
         ],
     },
     {
+        //9
         question: "Which of the following that you think you have the most understanding in?",
         subtitle: "Most likely the things you used to learn from high school",
         answer: [
@@ -107,6 +116,7 @@ const quizData = [
         ],
     },
     {
+        //10
         question: "Which of the following types of movies would you like to watch the most?",
         subtitle: "",
         answer: [
@@ -119,6 +129,7 @@ const quizData = [
         ],
     },
     {
+        //11
         question: "Which of the following activities would you like to try in the future?",
         subtitle: "",
         answer: [
@@ -131,18 +142,20 @@ const quizData = [
         ],
     },
     {
+        //12
         question: "Which of the following would you like to spend your time on watching?",
         subtitle: "It can be videos from every social media like Youtube, Facebook, Instagram or TikTok",
         answer: [
             "Wildlife documentaries", //10/10/25/10/15/30
             "History documentaries", //10/25/25/10/10/20
-            "Traveling videos", //20/10/20/10/10/30
+            "Traveling videos", //25/10/20/10/10/25
             "News reporting", //10/20/25/15/25/5
             "World Modern trending", //15/10/20/20/15/20
             "Music videos", //25/10/10/15/15/25
         ],
     },
     {
+        //13
         question: "Which of the following goodwills would you want to be involved in the most?",
         subtitle: "",
         answer: [
@@ -153,6 +166,7 @@ const quizData = [
         ],
     },
     {
+        //14
         question: "Which of the following subjects are you good at during high school?",
         subtitle: "",
         answer: [
@@ -163,6 +177,7 @@ const quizData = [
         ],
     },
     {
+        //15
         question: "Which of the following experiences did you have in high school?",
         subtitle: "",
         answer: [
@@ -182,36 +197,36 @@ const point = {
     "1.2": [23, 27, 13, 7, 13, 7],
     "1.3": [17, 23, 27, 7, 9, 17],
     "1.4": [27, 7, 17, 7, 13, 27],
-    "1.5": [7, 23, 17, 23, 27, 3],
+    "1.5": [16,16,16,16,18,16],
     "1.6": [27, 13, 17, 9, 7, 33],
 
     "2.1": [17, 27, 27, 3, 7, 17],
     "2.2": [13, 17, 17, 23, 17, 13],
-    "2.3": [23, 7, 23, 7, 17, 27],
+    "2.3": [20, 7, 23, 7, 17, 30],
     "2.4": [23, 13, 13, 13, 15, 23],
 
     "3.1": [23, 13, 23, 7, 13, 23],
     "3.2": [13, 27, 23, 7, 13, 13],
-    "3.3": [13, 23, 23, 13, 7, 17],
+    "3.3": [23, 13, 13, 13, 17, 17],
     "3.4": [13, 25, 23, 7, 13, 13],
-    "3.5": [13, 13, 13, 27, 33, 3],
-    "3.6": [23, 13, 13, 13, 23, 17],
+    "3.5": [13, 13, 5, 27, 33, 13],
+    "3.6": [23, 33, 10, 13, 23, 12],
 
     "4.1": [13, 13, 13, 27, 23, 7],
     "4.2": [7, 23, 7, 33, 23, 7],
     "4.3": [23, 13, 17, 17, 13, 23],
-    "4.4": [23, 7, 13, 23, 25, 13],
-    "4.5": [13, 29, 13, 11, 13, 17],
+    "4.4": [23, 7, 13, 23, 25, 33],
+    "4.5": [23, 29, 13, 11, 13, 7],
     "4.6": [17, 23, 13, 23, 13, 13],
 
-    "5.1": [27, 13, 23, 9, 7, 27],
+    "5.1": [27, 23, 23, 9, 7, 22],
     "5.2": [13, 23, 23, 13, 15, 17],
-    "5.3": [23, 13, 13, 17, 23, 13],
+    "5.3": [13, 13, 13, 17, 23, 13],
     "5.4": [13, 13, 13, 23, 25, 17],
     "5.5": [27, 7, 17, 9, 13, 27],
     "5.6": [7, 17, 7, 27, 17, 13],
 
-    "6.1": [23, 23, 13, 13, 7, 23],
+    "6.1": [29, 23, 13, 13, 7, 17],
     "6.2": [13, 13, 17, 21, 23, 13],
     "6.3": [23, 7, 7, 23, 21, 17],
     "6.4": [13, 13, 13, 9, 13, 29],
@@ -219,15 +234,15 @@ const point = {
     "6.6": [13, 17, 13, 15, 23, 17],
 
     "7.1": [13, 37, 27, 3, 0, 13],
-    "7.2": [7, 17, 33, 0, 3, 43],
+    "7.2": [27, 17, 33, 0, 3, 23],
     "7.3": [13, 3, 7, 37, 27, 7],
-    "7.4": [37, 3, 37, 3, 0, 23],
+    "7.4": [37, 3, 37, 0, 0, 37],
     "7.5": [7, 7, 37, 3, 7, 33],
-    "7.6": [17, 27, 23, 9, 7, 17],
+    "7.6": [12, 32, 23, 9, 7, 17],
 
     "8.1": [15, 21, 9, 17, 15, 27],
     "8.2": [25, 11, 19, 10, 15, 20],
-    "8.3": [15, 27, 17, 10, 15, 15],
+    "8.3": [20, 20, 17, 10, 15, 15],
     "8.4": [10, 15, 24, 16, 14, 22],
     "8.5": [15, 9, 21, 25, 15, 15],
     "8.6": [13, 15, 17, 15, 20, 20],
@@ -235,11 +250,11 @@ const point = {
     "9.1": [12, 13, 29, 11, 12, 23],
     "9.2": [25, 13, 5, 15, 17, 25],
     "9.3": [16, 14, 22, 13, 17, 18],
-    "9.4": [15, 25, 22, 8, 12, 18],
+    "9.4": [15, 35, 25, 0, 0, 18],
     "9.5": [12, 8, 11, 29, 32, 8],
-    "9.6": [16, 34, 24, 6, 7, 13],
+    "9.6": [16, 34, 24, 5, 3, 19],
 
-    "10.1": [12, 13, 33, 5, 9, 28],
+    "10.1": [20, 13, 33, 5, 9, 20],
     "10.2": [27, 7, 12, 13, 17, 23],
     "10.3": [12, 13, 17, 27, 19, 16],
     "10.4": [10, 14, 31, 10, 12, 23],
@@ -248,19 +263,19 @@ const point = {
 
     "11.1": [25, 10, 20, 10, 15, 20],
     "11.2": [15, 15, 20, 13, 9, 30],
-    "11.3": [25, 5, 10, 17, 13, 20],
+    "11.3": [30, 5, 10, 17, 13, 15],
     "11.4": [10, 35, 20, 13, 17, 15],
-    "11.5": [15, 15, 10, 25, 20, 15],
+    "11.5": [10, 25, 10, 25, 20, 15],
     "11.6": [10, 15, 15, 25, 30, 5],
 
     "12.1": [11, 11, 23, 11, 14, 29],
     "12.2": [10, 26, 24, 13, 9, 22],
-    "12.3": [21, 9, 22, 8, 11, 32],
+    "12.3": [25, 9, 22, 8, 11, 30],
     "12.4": [13, 18, 26, 14, 26, 4],
     "12.5": [15, 11, 19, 19, 16, 19],
     "12.6": [26, 11, 8, 11, 19, 26],
 
-    "13.1": [11, 19, 21, 4, 11, 29],
+    "13.1": [20, 19, 21, 4, 11, 25],
     "13.2": [11, 14, 21, 19, 21, 15],
     "13.3": [11, 34, 21, 9, 11, 14],
     "13.4": [31, 9, 21, 9, 8, 22],
@@ -268,9 +283,9 @@ const point = {
     "14.1": [11, 0, 0, 39, 50, 0],
     "14.2": [15, 26, 34, 0, 2, 23],
     "14.3": [3, 6, 5, 26, 29, 30],
-    "14.4": [26, 24, 25, 0, 5, 20],
+    "14.4": [20, 35, 25, 0, 5, 15],
 
-    "15.1": [26, 9, 16, 9, 16, 24],
+    "15.1": [26, 14, 10, 9, 16, 24],
     "15.2": [16, 0, 0, 36, 29, 19],
     "15.3": [31, 4, 26, 4, 6, 29],
     "15.4": [16, 14, 24, 9, 11, 24],
@@ -829,3 +844,11 @@ document.getElementById('home').addEventListener('click', () => {
 });
 
 /////////////////////// end of major Page Section //////////////////////////////////
+
+function showResult(){
+    let answer = document.getElementById('arr').value;
+    let latest = answer.replace(/\[|\]/g,'').split(',').map(i=>Number(i));
+    console.log(latest);
+    let result = caculatePoint(latest);
+    document.getElementById('answerResult').innerHTML = `[BU,Law,GA,ITM,IT,TM] <br> [${result}]`;
+}
