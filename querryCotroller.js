@@ -394,11 +394,9 @@ function nextQuestion() {
                 fadeQuestion();
             }, 1000);
         } else {
-            console.log(answeredArr);
             let point = caculatePoint(answeredArr);
-            let label_text = `<div id="labelText" style="text-align: center"> Based on your personality, <br> WIM thinks your most suitable major is: <br>
-            -> [${answeredArr}] <br> [${point}] </div>`;
-            console.log(point);
+
+            let label_text = `<div id="labelText" style="text-align: center"> Based on your personality, <br> WIM thinks your most suitable major is:`;
 
             let majorNo = point.indexOf(Math.max(...point));
             let major;
@@ -450,6 +448,8 @@ function nextQuestion() {
     }
 }
 
+
+
 function caculatePoint(answered) {
     var gradeArr = [];
     var pointArr = [];
@@ -466,11 +466,12 @@ function caculatePoint(answered) {
         pointArr.push(score);
     }
 
-    console.log(gradeArr);
-    console.log(pointArr);
-
     return pointArr;
 }
+
+
+
+
 
 function questionPage() {
     document.querySelector("#findMajor").addEventListener("click", function () {
